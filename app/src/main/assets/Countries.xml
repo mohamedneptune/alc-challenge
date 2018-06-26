@@ -1,0 +1,2742 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ListCountry>
+    <Countries>
+        <Country>
+            <Code>AF</Code>
+            <Name>Afghanistan</Name>
+            <Prefix>93</Prefix>
+            <Currency>Afghani</Currency>
+            <Capitale>Kabul</Capitale>
+            <TimeZone>UTC+04:30</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code>AI</Code>
+            <Name>Aland Islands</Name>
+            <Prefix>358 18</Prefix>
+            <Currency>Icelandic Krona</Currency>
+            <Capitale>Reykjavik</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code>AL</Code>
+            <Name>Albania</Name>
+            <Prefix>355</Prefix>
+            <Currency>Lek</Currency>
+            <Capitale>Tirane</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code>DZ</Code>
+            <Name>Algeria</Name>
+            <Prefix>213</Prefix>
+            <Currency>Algerian Dinar</Currency>
+            <Capitale>Algiers</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code>AS</Code>
+            <Name>American Samoa</Name>
+            <Prefix>1684</Prefix>
+            <Currency>Tala</Currency>
+            <Capitale>Apia</Capitale>
+            <TimeZone>UTC-11:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code>AD</Code>
+            <Name>Andorra</Name>
+            <Prefix>376</Prefix>
+            <Currency>Euro</Currency>
+            <Capitale>Andorra la Vella</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code>AO</Code>
+            <Name>Angola</Name>
+            <Prefix>244</Prefix>
+            <Currency>Kwanza</Currency>
+            <Capitale>Luanda</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code>AI</Code>
+            <Name>Anguilla</Name>
+            <Prefix>1264</Prefix>
+            <Currency>Dollar des Caraibes</Currency>
+            <Capitale>The Valley‎</Capitale>
+            <TimeZone>UTC-04:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code>AG</Code>
+            <Name>Antigua and Barbuda</Name>
+            <Prefix>1268</Prefix>
+            <Currency>East Caribbean Dollar</Currency>
+            <Capitale>Saint John's</Capitale>
+            <TimeZone>UTC-04:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code>AR</Code>
+            <Name>Argentina</Name>
+            <Prefix>54</Prefix>
+            <Currency>Argentine Peso</Currency>
+            <Capitale>Buenos Aires</Capitale>
+            <TimeZone>UTC-03:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code>AM</Code>
+            <Name>Armenia</Name>
+            <Prefix>374</Prefix>
+            <Currency>Dram</Currency>
+            <Capitale>Yerevan</Capitale>
+            <TimeZone>UTC+04:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code>AR</Code>
+            <Name>Aruba</Name>
+            <Prefix>297</Prefix>
+            <Currency>Florin d'Aruba</Currency>
+            <Capitale>Oranjestad</Capitale>
+            <TimeZone>UTC-04:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code>AU</Code>
+            <Name>Australia</Name>
+            <Prefix>61</Prefix>
+            <Currency>Australian Dollar</Currency>
+            <Capitale>Canberra</Capitale>
+            <TimeZone>UTC+11:00</TimeZone>
+            <Dst>UTC+10:30</Dst>
+            <DstBegin>0104</DstBegin>
+            <DstEnd>0710</DstEnd>
+        </Country>
+
+        <Country>
+            <Code>AT</Code>
+            <Name>Austria</Name>
+            <Prefix>43</Prefix>
+            <Currency>Euro</Currency>
+            <Capitale>Vienna</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code>AZ</Code>
+            <Name>Azerbaijan</Name>
+            <Prefix>994</Prefix>
+            <Currency>Manat</Currency>
+            <Capitale>Baku</Capitale>
+            <TimeZone>UTC+04:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Bahamas</Name>
+            <Prefix>1242</Prefix>
+            <Currency>Bahamian Dollar</Currency>
+            <Capitale>Nassau</Capitale>
+            <TimeZone>UTC-05:00</TimeZone>
+            <Dst>UTC-04:00</Dst>
+            <DstBegin>1103</DstBegin>
+            <DstEnd>0411</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Bahrain</Name>
+            <Prefix>973</Prefix>
+            <Currency>Bahraini Dinar</Currency>
+            <Capitale>Manama</Capitale>
+            <TimeZone>UTC+03:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Bangladesh</Name>
+            <Prefix>880</Prefix>
+            <Currency>Taka</Currency>
+            <Capitale>Dhaka</Capitale>
+            <TimeZone>UTC+06:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Barbados</Name>
+            <Prefix>1246</Prefix>
+            <Currency>Barbadian Dollar</Currency>
+            <Capitale>Bridgetown</Capitale>
+            <TimeZone>UTC-04:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Belarus</Name>
+            <Prefix>375</Prefix>
+            <Currency>Belarusian Ruble</Currency>
+            <Capitale>Minsk</Capitale>
+            <TimeZone>UTC+03:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Belgium</Name>
+            <Prefix>32</Prefix>
+            <Currency>Euro</Currency>
+            <Capitale>Brussels</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Belize</Name>
+            <Prefix>501</Prefix>
+            <Currency>Belize Dollar</Currency>
+            <Capitale>Belmopan</Capitale>
+            <TimeZone>UTC-06:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Benin</Name>
+            <Prefix>229</Prefix>
+            <Currency>Franc</Currency>
+            <Capitale>Porto-Novo</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Bermuda</Name>
+            <Prefix>1441</Prefix>
+            <Currency>Bermudian dollar</Currency>
+            <Capitale>Hamilton</Capitale>
+            <TimeZone>UTC-04:00</TimeZone>
+            <Dst>UTC-03:00</Dst>
+            <DstBegin>1103</DstBegin>
+            <DstEnd>0411</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Bhutan</Name>
+            <Prefix>975</Prefix>
+            <Currency>Ngultrum</Currency>
+            <Capitale>Thimphu</Capitale>
+            <TimeZone>UTC+06:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Bolivia</Name>
+            <Prefix>591</Prefix>
+            <Currency>Boliviano</Currency>
+            <Capitale>La Paz</Capitale>
+            <TimeZone>UTC-04:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Bosnia</Name>
+            <Prefix>387</Prefix>
+            <Currency>Convertible Mark</Currency>
+            <Capitale>Sarajevo</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Botswana</Name>
+            <Prefix>267</Prefix>
+            <Currency>Pula</Currency>
+            <Capitale>Gaborone</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Brazil</Name>
+            <Prefix>55</Prefix>
+            <Currency>Real</Currency>
+            <Capitale>Brasilia</Capitale>
+            <TimeZone>UTC-02:00</TimeZone>
+            <Dst>UTC-03:00</Dst>
+            <DstBegin>1802</DstBegin>
+            <DstEnd>0411</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>British indian</Name>
+            <Prefix>246</Prefix>
+            <Currency></Currency>
+            <Capitale></Capitale>
+            <TimeZone>UTC+06:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>British Virgin</Name>
+            <Prefix>1284</Prefix>
+            <Currency></Currency>
+            <Capitale></Capitale>
+            <TimeZone>UTC-04:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Brunei</Name>
+            <Prefix>673</Prefix>
+            <Currency>Brunei Dollar</Currency>
+            <Capitale>Bandar Seri Begawan</Capitale>
+            <TimeZone>UTC+08:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Bulgaria</Name>
+            <Prefix>359</Prefix>
+            <Currency>Lev</Currency>
+            <Capitale>Sofia</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst>UTC+03:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Burkina Faso</Name>
+            <Prefix>226</Prefix>
+            <Currency>Franc</Currency>
+            <Capitale>Ouagadougou</Capitale>
+            <TimeZone>UTC+00:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Burundi</Name>
+            <Prefix>257</Prefix>
+            <Currency>Franc</Currency>
+            <Capitale>Bujumbura</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Cambodia</Name>
+            <Prefix>855</Prefix>
+            <Currency>Riel</Currency>
+            <Capitale>Phnom Penh</Capitale>
+            <TimeZone>UTC+07:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Cameroon</Name>
+            <Prefix>237</Prefix>
+            <Currency>Franc</Currency>
+            <Capitale>Yaounde</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Canada</Name>
+            <Prefix>1</Prefix>
+            <Currency>Canadian Dollar</Currency>
+            <Capitale>Ottawa</Capitale>
+            <TimeZone>UTC-04:00</TimeZone>
+            <Dst>UTC-03:00</Dst>
+            <DstBegin>1103</DstBegin>
+            <DstEnd>0411</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Cape Verde</Name>
+            <Prefix>238</Prefix>
+            <Currency>Cape Verdean Escudo</Currency>
+            <Capitale>Praia</Capitale>
+            <TimeZone>UTC-01:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Cayman Islands</Name>
+            <Prefix>1345</Prefix>
+            <Currency></Currency>
+            <Capitale></Capitale>
+            <TimeZone>UTC-05:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Central African republic</Name>
+            <Prefix>236</Prefix>
+            <Currency>Franc</Currency>
+            <Capitale>Bangui</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Chad</Name>
+            <Prefix>235</Prefix>
+            <Currency>Franc</Currency>
+            <Capitale>N Djamena</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Chile</Name>
+            <Prefix>56</Prefix>
+            <Currency>Chilean Peso</Currency>
+            <Capitale>Santiago</Capitale>
+            <TimeZone>UTC-04:00</TimeZone>
+            <Dst>UTC-03:00</Dst>
+            <DstBegin>1305</DstBegin>
+            <DstEnd>1208</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>China</Name>
+            <Prefix>86</Prefix>
+            <Currency>Chinese Yuan</Currency>
+            <Capitale>Beijing</Capitale>
+            <TimeZone>UTC+08:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Christmas Island</Name>
+            <Prefix>+61 89164</Prefix>
+            <Currency></Currency>
+            <Capitale></Capitale>
+            <TimeZone>UTC+07:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Cocos Keeling islands</Name>
+            <Prefix>+61 89162</Prefix>
+            <Currency></Currency>
+            <Capitale></Capitale>
+            <TimeZone>UTC+06:30</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Colombia</Name>
+            <Prefix>57</Prefix>
+            <Currency>Colombian Peso</Currency>
+            <Capitale>Bogota</Capitale>
+            <TimeZone>UTC-05:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Comoros</Name>
+            <Prefix>269</Prefix>
+            <Currency>Comorian Fran</Currency>
+            <Capitale>Moroni</Capitale>
+            <TimeZone>UTC+03:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Congo</Name>
+            <Prefix>242</Prefix>
+            <Currency>Congolese Franc</Currency>
+            <Capitale>Kinshasa</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Cook islands</Name>
+            <Prefix>682</Prefix>
+            <Currency></Currency>
+            <Capitale></Capitale>
+            <TimeZone>UTC-10:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Costa Rica</Name>
+            <Prefix>506</Prefix>
+            <Currency>Colon</Currency>
+            <Capitale>San Jose</Capitale>
+            <TimeZone>UTC-06:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Cote divoire</Name>
+            <Prefix>225</Prefix>
+            <Currency>Franc</Currency>
+            <Capitale>Abidjan</Capitale>
+            <TimeZone>UTC+00:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Croatia</Name>
+            <Prefix>385</Prefix>
+            <Currency>Croatian</Currency>
+            <Capitale>Zagreb</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Cuba</Name>
+            <Prefix>53</Prefix>
+            <Currency>Cuban Peso</Currency>
+            <Capitale>Havana</Capitale>
+            <TimeZone>UTC-05:00</TimeZone>
+            <Dst>UTC-04:00</Dst>
+            <DstBegin>1103</DstBegin>
+            <DstEnd>0411</DstEnd>
+        </Country>
+
+        <Country>
+            <Code>CW</Code>
+            <Name>Curacao</Name>
+            <Prefix>+599 9</Prefix>
+            <Currency>Florin</Currency>
+            <Capitale>Willemstad</Capitale>
+            <TimeZone>UTC -4</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Cyprus</Name>
+            <Prefix>357</Prefix>
+            <Currency>Euro</Currency>
+            <Capitale>Nicosia</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst>UTC+03:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Czech Republic</Name>
+            <Prefix>420</Prefix>
+            <Currency>Czech Koruna</Currency>
+            <Capitale>Prague</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Democratic Republic of the Congo</Name>
+            <Prefix>243</Prefix>
+            <Currency>Congolese Franc</Currency>
+            <Capitale>Kinshasa</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Denmark</Name>
+            <Prefix>45</Prefix>
+            <Currency>Danish Krone</Currency>
+            <Capitale>Copenhagen</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Djibouti</Name>
+            <Prefix>253</Prefix>
+            <Currency>Djiboutian Franc</Currency>
+            <Capitale>Djibouti</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Dominica</Name>
+            <Prefix>1767</Prefix>
+            <Currency>East Caribbean Dollar</Currency>
+            <Capitale>Rosesau</Capitale>
+            <TimeZone>UTC-04:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Dominican Republic</Name>
+            <Prefix>1809</Prefix>
+            <Currency>Dominican Peso</Currency>
+            <Capitale>Santo Domingo</Capitale>
+            <TimeZone>UTC-04:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>East Timor</Name>
+            <Prefix>670</Prefix>
+            <Currency>United States Dollar</Currency>
+            <Capitale>Dilli</Capitale>
+            <TimeZone>UTC+09:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Ecuador</Name>
+            <Prefix>593</Prefix>
+            <Currency>United States Dollar</Currency>
+            <Capitale>Quito</Capitale>
+            <TimeZone>UTC-06:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Egypt</Name>
+            <Prefix>20</Prefix>
+            <Currency>Egyptian Pound</Currency>
+            <Capitale>Cairo</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>El Salvador</Name>
+            <Prefix>503</Prefix>
+            <Currency>United States Dollar</Currency>
+            <Capitale>San Salvador</Capitale>
+            <TimeZone>UTC-06:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Equatorial Guinea</Name>
+            <Prefix>240</Prefix>
+            <Currency>Guinean Franc</Currency>
+            <Capitale>Conakry</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Eritrea</Name>
+            <Prefix>291</Prefix>
+            <Currency>Nakfa</Currency>
+            <Capitale>Asmara</Capitale>
+            <TimeZone>UTC+03:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Estonia</Name>
+            <Prefix>372</Prefix>
+            <Currency>Euro</Currency>
+            <Capitale>Tallinn</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst>UTC+03:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Ethiopia</Name>
+            <Prefix>251</Prefix>
+            <Currency>Birr</Currency>
+            <Capitale>Addis Ababa</Capitale>
+            <TimeZone>UTC+03:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Falkland Islands</Name>
+            <Prefix>500</Prefix>
+            <Currency>Falklands pound</Currency>
+            <Capitale>Stanley</Capitale>
+            <TimeZone>UTC-03:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Faroe Islands</Name>
+            <Prefix>298</Prefix>
+            <Currency>Faroese krona</Currency>
+            <Capitale>Torshavn</Capitale>
+            <TimeZone>UTC+00:00</TimeZone>
+            <Dst>UTC+01:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Fiji</Name>
+            <Prefix>679</Prefix>
+            <Currency>Fijian Dollar</Currency>
+            <Capitale>Suva</Capitale>
+            <TimeZone>UTC+12:00</TimeZone>
+            <Dst>UTC+13:00</Dst>
+            <DstBegin>1401</DstBegin>
+            <DstEnd>0411</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Finland</Name>
+            <Prefix>358</Prefix>
+            <Currency>Euro</Currency>
+            <Capitale>Helsinki</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst>UTC+03:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>France</Name>
+            <Prefix>33</Prefix>
+            <Currency>Euro</Currency>
+            <Capitale>Paris</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>French Polynesia</Name>
+            <Prefix>689</Prefix>
+            <Currency>CFP franc</Currency>
+            <Capitale>Papeete</Capitale>
+            <TimeZone>UTC-10:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Gabon</Name>
+            <Prefix>241</Prefix>
+            <Currency>Franc</Currency>
+            <Capitale>Libreville</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Georgia</Name>
+            <Prefix>995</Prefix>
+            <Currency>Lari</Currency>
+            <Capitale>Tbilisi</Capitale>
+            <TimeZone>UTC+04:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Germany</Name>
+            <Prefix>49</Prefix>
+            <Currency>Euro</Currency>
+            <Capitale>Berlin</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Ghana</Name>
+            <Prefix>233</Prefix>
+            <Currency>Ghanaian Cedi</Currency>
+            <Capitale>Accra</Capitale>
+            <TimeZone>UTC+00:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Gibraltar</Name>
+            <Prefix>350</Prefix>
+            <Currency>Livre de Gibraltar</Currency>
+            <Capitale>Gibraltar</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Greece</Name>
+            <Prefix>30</Prefix>
+            <Currency>Euro</Currency>
+            <Capitale>Athens</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst>UTC+03:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Greenland</Name>
+            <Prefix>299</Prefix>
+            <Currency>Danish krone</Currency>
+            <Capitale>Nuuk</Capitale>
+            <TimeZone>UTC-04:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Grenada</Name>
+            <Prefix>1473</Prefix>
+            <Currency>East Caribbean Dollar</Currency>
+            <Capitale>St. George s</Capitale>
+            <TimeZone>UTC-04:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Guadeloupe</Name>
+            <Prefix>590</Prefix>
+            <Currency>Euro</Currency>
+            <Capitale></Capitale>
+            <TimeZone>UTC-04:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Guam</Name>
+            <Prefix>1671</Prefix>
+            <Currency>Dollar américain</Currency>
+            <Capitale>Hagatna</Capitale>
+            <TimeZone>UTC+10:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Guatemala</Name>
+            <Prefix>502</Prefix>
+            <Currency>Quetzal</Currency>
+            <Capitale>Guatemala City</Capitale>
+            <TimeZone>UTC-06:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Guinea</Name>
+            <Prefix>224</Prefix>
+            <Currency>Guinean Franc</Currency>
+            <Capitale>Conakry</Capitale>
+            <TimeZone>UTC+00:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Guinea Bissau</Name>
+            <Prefix>245</Prefix>
+            <Currency>Franc</Currency>
+            <Capitale>Bissau</Capitale>
+            <TimeZone>UTC+00:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Guyana</Name>
+            <Prefix>592</Prefix>
+            <Currency>Guyanese Dollar</Currency>
+            <Capitale>Georgetown</Capitale>
+            <TimeZone>UTC-04:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Haiti</Name>
+            <Prefix>509</Prefix>
+            <Currency>Gourde</Currency>
+            <Capitale>Port-au-Prince</Capitale>
+            <TimeZone>UTC-05:00</TimeZone>
+            <Dst>UTC-04:00</Dst>
+            <DstBegin>1103</DstBegin>
+            <DstEnd>0411</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Hawaii</Name>
+            <Prefix>001 808</Prefix>
+            <Currency>dollar</Currency>
+            <Capitale>Honolulu</Capitale>
+            <TimeZone>UTC−10:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Honduras</Name>
+            <Prefix>504</Prefix>
+            <Currency>Lempira</Currency>
+            <Capitale>Tegucigalpa</Capitale>
+            <TimeZone>UTC-06:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Hong Kong</Name>
+            <Prefix>852</Prefix>
+            <Currency>Dollar de Hong Kong</Currency>
+            <Capitale>Hong Kong</Capitale>
+            <TimeZone>UTC+08:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code>HU</Code>
+            <Name>Hungary</Name>
+            <Prefix>36</Prefix>
+            <Currency>Forint</Currency>
+            <Capitale>Budapest</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Iceland</Name>
+            <Prefix>354</Prefix>
+            <Currency>Icelandic Krona</Currency>
+            <Capitale>Reykjavik</Capitale>
+            <TimeZone>UTC+00:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>India</Name>
+            <Prefix>91</Prefix>
+            <Currency>Indian Rupee</Currency>
+            <Capitale>New Delhi</Capitale>
+            <TimeZone>UTC+05:30</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Indonesia</Name>
+            <Prefix>62</Prefix>
+            <Currency>Rupiah</Currency>
+            <Capitale>Jakarta</Capitale>
+            <TimeZone>UTC+07:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Iran</Name>
+            <Prefix>98</Prefix>
+            <Currency>Rial</Currency>
+            <Capitale>Tehran</Capitale>
+            <TimeZone>UTC+03:30</TimeZone>
+            <Dst>UTC+04:30</Dst>
+            <DstBegin>2203</DstBegin>
+            <DstEnd>2209</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Iraq</Name>
+            <Prefix>964</Prefix>
+            <Currency>Iraqi Dinar</Currency>
+            <Capitale>Baghdad</Capitale>
+            <TimeZone>UTC+03:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Ireland</Name>
+            <Prefix>353</Prefix>
+            <Currency>Euro</Currency>
+            <Capitale>Dublin</Capitale>
+            <TimeZone>UTC+00:00</TimeZone>
+            <Dst>UTC+01:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>italy</Name>
+            <Prefix>39</Prefix>
+            <Currency>Euro</Currency>
+            <Capitale>Rome</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Jamaica</Name>
+            <Prefix>1876</Prefix>
+            <Currency>Jamaican Dollar</Currency>
+            <Capitale>Kingston</Capitale>
+            <TimeZone>UTC-05:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code>JP</Code>
+            <Name>Japan</Name>
+            <Prefix>81</Prefix>
+            <Currency>Yen</Currency>
+            <Capitale>Tokyo</Capitale>
+            <TimeZone>UTC+09:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code>JE</Code>
+            <Name>Jersey</Name>
+            <Prefix>+44 1534</Prefix>
+            <Currency>Pound</Currency>
+            <Capitale>Saint-Hélier</Capitale>
+            <TimeZone>UTC+00:00</TimeZone>
+            <Dst>UTC+01:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Jordan</Name>
+            <Prefix>962</Prefix>
+            <Currency>Jordanian Dinar</Currency>
+            <Capitale>Amman</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Kazakhstan</Name>
+            <Prefix>76</Prefix>
+            <Currency>Tenge</Currency>
+            <Capitale>Astana</Capitale>
+            <TimeZone>UTC+05:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Kenya</Name>
+            <Prefix>254</Prefix>
+            <Currency>Kenyan Shilling</Currency>
+            <Capitale>Nairobi</Capitale>
+            <TimeZone>UTC+03:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Kiribati</Name>
+            <Prefix>686</Prefix>
+            <Currency>Kiribati Dollar</Currency>
+            <Capitale>Tarawa Atoll</Capitale>
+            <TimeZone>UTC+12:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code>XK</Code>
+            <Name>Kosovo</Name>
+            <Prefix>383</Prefix>
+            <Currency>Euro</Currency>
+            <Capitale>Pristina</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+01:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Kuwait</Name>
+            <Prefix>965</Prefix>
+            <Currency>Kuwaiti Dollar</Currency>
+            <Capitale>Kuwait City</Capitale>
+            <TimeZone>UTC+03:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Kyrgyzstan</Name>
+            <Prefix>996</Prefix>
+            <Currency>Som</Currency>
+            <Capitale>Bishkek</Capitale>
+            <TimeZone>UTC+05:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Laos</Name>
+            <Prefix>856</Prefix>
+            <Currency>Kip</Currency>
+            <Capitale>Vientiane</Capitale>
+            <TimeZone>UTC+07:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Latvia</Name>
+            <Prefix>371</Prefix>
+            <Currency>Lats</Currency>
+            <Capitale>Riga</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst>UTC+03:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Lebanon</Name>
+            <Prefix>961</Prefix>
+            <Currency>Lebanese Pound</Currency>
+            <Capitale>Beirut</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst>UTC+03:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Lesotho</Name>
+            <Prefix>266</Prefix>
+            <Currency>Loti</Currency>
+            <Capitale>Maseru</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Liberia</Name>
+            <Prefix>231</Prefix>
+            <Currency>Liberian Dollar</Currency>
+            <Capitale>Monrovia</Capitale>
+            <TimeZone>UTC+00:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Libya</Name>
+            <Prefix>218</Prefix>
+            <Currency>Libyan Dinar</Currency>
+            <Capitale>Tripoli</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Liechtenstein</Name>
+            <Prefix>423</Prefix>
+            <Currency>Swiss Franc</Currency>
+            <Capitale>Vaduz</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Lithuania</Name>
+            <Prefix>370</Prefix>
+            <Currency>Lithuanian Litas</Currency>
+            <Capitale>Vilnius</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst>UTC+03:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Luxembourg</Name>
+            <Prefix>352</Prefix>
+            <Currency>Euro</Currency>
+            <Capitale>Luxembourg</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Macau</Name>
+            <Prefix>853</Prefix>
+            <Currency></Currency>
+            <Capitale></Capitale>
+            <TimeZone>UTC+08:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Macedonia</Name>
+            <Prefix>389</Prefix>
+            <Currency>Macedonian Denar</Currency>
+            <Capitale>Skopje</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Madagascar</Name>
+            <Prefix>261</Prefix>
+            <Currency>Malagasy Ariary</Currency>
+            <Capitale>Antananarivo</Capitale>
+            <TimeZone>UTC+03:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Malawi</Name>
+            <Prefix>265</Prefix>
+            <Currency>Malawi Kwacha</Currency>
+            <Capitale>Lilongwe</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Malaysia</Name>
+            <Prefix>60</Prefix>
+            <Currency>Ringgit</Currency>
+            <Capitale>Kuala Lumpur</Capitale>
+            <TimeZone>UTC+08:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Maldives</Name>
+            <Prefix>960</Prefix>
+            <Currency>Maldivian Rufiyaa</Currency>
+            <Capitale>Male</Capitale>
+            <TimeZone>UTC+05:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Mali</Name>
+            <Prefix>223</Prefix>
+            <Currency>Franc</Currency>
+            <Capitale>Bamako</Capitale>
+            <TimeZone>UTC+00:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Malta</Name>
+            <Prefix>356</Prefix>
+            <Currency>Euro</Currency>
+            <Capitale>Valletta</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+01:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Marshall Islands</Name>
+            <Prefix>692</Prefix>
+            <Currency>United States Dollar</Currency>
+            <Capitale>Majuro</Capitale>
+            <TimeZone>UTC+12:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Martinique</Name>
+            <Prefix>596</Prefix>
+            <Currency>Euro</Currency>
+            <Capitale></Capitale>
+            <TimeZone>UTC-04:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Mauritania</Name>
+            <Prefix>222</Prefix>
+            <Currency>Ouguiya</Currency>
+            <Capitale>Nouakchott</Capitale>
+            <TimeZone>UTC+00:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Mauritius</Name>
+            <Prefix>230</Prefix>
+            <Currency>Mauritian Rupee</Currency>
+            <Capitale>Port Louis</Capitale>
+            <TimeZone>UTC+04:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Mexico</Name>
+            <Prefix>52</Prefix>
+            <Currency>Mexican Peso</Currency>
+            <Capitale>Mexico City</Capitale>
+            <TimeZone>UTC-08:00</TimeZone>
+            <Dst>UTC-07:00</Dst>
+            <DstBegin>0114</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code>FM</Code>
+            <Name>Micronesia</Name>
+            <Prefix>691</Prefix>
+            <Currency>Dollar</Currency>
+            <Capitale>Palikir</Capitale>
+            <TimeZone>UTC+10:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Moldova</Name>
+            <Prefix>373</Prefix>
+            <Currency>Moldovan Leu</Currency>
+            <Capitale>Chisinau</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst>UTC+03:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Monaco</Name>
+            <Prefix>377</Prefix>
+            <Currency>Euro</Currency>
+            <Capitale>Monaco</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Mongolia</Name>
+            <Prefix>976</Prefix>
+            <Currency>Togrog</Currency>
+            <Capitale>Ulaanbaatar</Capitale>
+            <TimeZone>UTC+07:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Montenegro</Name>
+            <Prefix>382</Prefix>
+            <Currency>Euro</Currency>
+            <Capitale>Podgorica</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Montserrat</Name>
+            <Prefix>1664</Prefix>
+            <Currency>East Caribbean dollar</Currency>
+            <Capitale>Plymouth</Capitale>
+            <TimeZone>UTC-04:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Morocco</Name>
+            <Prefix>212</Prefix>
+            <Currency>Moroccan Dirham</Currency>
+            <Capitale>Rabat</Capitale>
+            <TimeZone>UTC+00:00</TimeZone>
+            <Dst>UTC+01:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Mozambique</Name>
+            <Prefix>258</Prefix>
+            <Currency>Mozambican Metical</Currency>
+            <Capitale>Maputo</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code>MM</Code>
+            <Name>Myanmar Burma</Name>
+            <Prefix>95</Prefix>
+            <Currency>Kyat</Currency>
+            <Capitale>Nypyidaw</Capitale>
+            <TimeZone>UTC+06:30</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Namibia</Name>
+            <Prefix>264</Prefix>
+            <Currency>Namibian Dollar</Currency>
+            <Capitale>Windhoek</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Nauru</Name>
+            <Prefix>674</Prefix>
+            <Currency>Australian Dollar</Currency>
+            <Capitale>Yaren</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Nepal</Name>
+            <Prefix>977</Prefix>
+            <Currency>Nepalese Rupee</Currency>
+            <Capitale>Kathmandu</Capitale>
+            <TimeZone>UTC+05:45</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Netherlands</Name>
+            <Prefix>31</Prefix>
+            <Currency>Euro</Currency>
+            <Capitale>Amsterdam</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>New Caledonia</Name>
+            <Prefix>687</Prefix>
+            <Currency>CFP franc</Currency>
+            <Capitale>Nouméa</Capitale>
+            <TimeZone>UTC+11:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>New Zealand</Name>
+            <Prefix>64</Prefix>
+            <Currency>New Zealand Dollar</Currency>
+            <Capitale>Wellington</Capitale>
+            <TimeZone>UTC+12:00</TimeZone>
+            <Dst>UTC+13:00</Dst>
+            <DstBegin>0104</DstBegin>
+            <DstEnd>3009</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Nicaragua</Name>
+            <Prefix>505</Prefix>
+            <Currency>Cordoba</Currency>
+            <Capitale>Managua</Capitale>
+            <TimeZone>UTC-06:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Niger</Name>
+            <Prefix>227</Prefix>
+            <Currency>Franc</Currency>
+            <Capitale>Niamey</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Nigeria</Name>
+            <Prefix>234</Prefix>
+            <Currency>Naira</Currency>
+            <Capitale>Abuja</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Niue</Name>
+            <Prefix>683</Prefix>
+            <Currency>Niue dollar</Currency>
+            <Capitale>Alofi</Capitale>
+            <TimeZone>UTC-11:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code>KP</Code>
+            <Name>North Korea</Name>
+            <Prefix>850</Prefix>
+            <Currency>Won</Currency>
+            <Capitale>Pyongyang</Capitale>
+            <TimeZone>UTC+08:30</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Northern Mariana Islands</Name>
+            <Prefix>1670</Prefix>
+            <Currency>United States Dollar</Currency>
+            <Capitale>Capitol Hill</Capitale>
+            <TimeZone>UTC+10:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Norway</Name>
+            <Prefix>47</Prefix>
+            <Currency>Norwegian Krone</Currency>
+            <Capitale>Oslo</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Oman</Name>
+            <Prefix>968</Prefix>
+            <Currency>Omani Rial</Currency>
+            <Capitale>Muscat</Capitale>
+            <TimeZone>UTC+04:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Ossetia South</Name>
+            <Prefix>995 34</Prefix>
+            <Currency>Russian ruble</Currency>
+            <Capitale>Tskhinvali</Capitale>
+            <TimeZone>UTC+03:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Pakistan</Name>
+            <Prefix>92</Prefix>
+            <Currency>Pakistani Rupee</Currency>
+            <Capitale>Islamabad</Capitale>
+            <TimeZone>UTC+05:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Palau</Name>
+            <Prefix>680</Prefix>
+            <Currency>United States Dollar</Currency>
+            <Capitale>Melekeok</Capitale>
+            <TimeZone>UTC+09:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Palestine</Name>
+            <Prefix>970</Prefix>
+            <Currency>Palestine pound</Currency>
+            <Capitale>Jerusalem</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst>UTC+03:00</Dst>
+            <DstBegin>2303</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Panama</Name>
+            <Prefix>507</Prefix>
+            <Currency>Balboa</Currency>
+            <Capitale>Panama City</Capitale>
+            <TimeZone>UTC-05:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Papua New Guinea</Name>
+            <Prefix>675</Prefix>
+            <Currency>Franc</Currency>
+            <Capitale>Conakry</Capitale>
+            <TimeZone>UTC+10:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Paraguay</Name>
+            <Prefix>595</Prefix>
+            <Currency>Guarani</Currency>
+            <Capitale>Asuncion</Capitale>
+            <TimeZone>UTC-04:00</TimeZone>
+            <Dst>UTC-03:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>0710</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Peru</Name>
+            <Prefix>51</Prefix>
+            <Currency>Nuevo Sol</Currency>
+            <Capitale>Lima</Capitale>
+            <TimeZone>UTC-05:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Philippines</Name>
+            <Prefix>63</Prefix>
+            <Currency>Phillipine Peso</Currency>
+            <Capitale>Manila</Capitale>
+            <TimeZone>UTC+08:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Poland</Name>
+            <Prefix>48</Prefix>
+            <Currency>Ztoty</Currency>
+            <Capitale>Warsaw</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Portugal</Name>
+            <Prefix>351</Prefix>
+            <Currency>Euro</Currency>
+            <Capitale>Lisbon</Capitale>
+            <TimeZone>UTC+00:00</TimeZone>
+            <Dst>UTC+01:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Puerto Rico</Name>
+            <Prefix>1939</Prefix>
+            <Currency>United States dollar</Currency>
+            <Capitale>San Juan</Capitale>
+            <TimeZone>UTC-04:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Qatar</Name>
+            <Prefix>974</Prefix>
+            <Currency>Qatari Riyal</Currency>
+            <Capitale>Doha</Capitale>
+            <TimeZone>UTC+03:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Romania</Name>
+            <Prefix>40</Prefix>
+            <Currency>Romanian Rupee</Currency>
+            <Capitale>Bucharest</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst>UTC+03:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Russia</Name>
+            <Prefix>7</Prefix>
+            <Currency>Ruble</Currency>
+            <Capitale>Moscow</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Rwanda</Name>
+            <Prefix>250</Prefix>
+            <Currency>Rwandan Franc</Currency>
+            <Capitale>Kigali</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Saint Helena</Name>
+            <Prefix>290</Prefix>
+            <Currency></Currency>
+            <Capitale></Capitale>
+            <TimeZone>UTC+00:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Saint Kitts and Nevis</Name>
+            <Prefix>1869</Prefix>
+            <Currency>East Caribbean Dollar</Currency>
+            <Capitale>Basseterre</Capitale>
+            <TimeZone>UTC-04:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Saint Lucia</Name>
+            <Prefix>1758</Prefix>
+            <Currency>East Caribbean Dollar</Currency>
+            <Capitale>Castries</Capitale>
+            <TimeZone>UTC-04:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Samoa</Name>
+            <Prefix>685</Prefix>
+            <Currency>Tala</Currency>
+            <Capitale>Apia</Capitale>
+            <TimeZone>UTC+13:00</TimeZone>
+            <Dst>UTC+14:00</Dst>
+            <DstBegin>0104</DstBegin>
+            <DstEnd>3009</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>San Marino</Name>
+            <Prefix>378</Prefix>
+            <Currency>Euro</Currency>
+            <Capitale>San Marino</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Sao Tome and Principe</Name>
+            <Prefix>239</Prefix>
+            <Currency>Dobra</Currency>
+            <Capitale>Sao Tome</Capitale>
+            <TimeZone>UTC+00:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Saudi Arabia</Name>
+            <Prefix>966</Prefix>
+            <Currency>Saudi Riyal</Currency>
+            <Capitale>Riyadh</Capitale>
+            <TimeZone>UTC+03:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Senegal</Name>
+            <Prefix>221</Prefix>
+            <Currency>Franc</Currency>
+            <Capitale>Dakar</Capitale>
+            <TimeZone>UTC+00:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Serbia</Name>
+            <Prefix>381</Prefix>
+            <Currency>Serbian Dinar</Currency>
+            <Capitale>Belgrade</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Seychelles</Name>
+            <Prefix>248</Prefix>
+            <Currency>Seychoellois Rupee</Currency>
+            <Capitale>Victoria</Capitale>
+            <TimeZone>UTC+04:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Sierra Leone</Name>
+            <Prefix>232</Prefix>
+            <Currency>Leone</Currency>
+            <Capitale>Freetown</Capitale>
+            <TimeZone>UTC+00:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Singapore</Name>
+            <Prefix>65</Prefix>
+            <Currency>Singapore Dollar</Currency>
+            <Capitale>Singapore</Capitale>
+            <TimeZone>UTC+08:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Sint Maarten</Name>
+            <Prefix>1721</Prefix>
+            <Currency>Florin des Antilles néerlandaises</Currency>
+            <Capitale>Philipsburg</Capitale>
+            <TimeZone>UTC-04:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Slovakia</Name>
+            <Prefix>421</Prefix>
+            <Currency>Euro</Currency>
+            <Capitale>Bratislava</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Slovenia</Name>
+            <Prefix>386</Prefix>
+            <Currency>Euro</Currency>
+            <Capitale>Ljubljana</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Solomon Islands</Name>
+            <Prefix>677</Prefix>
+            <Currency>Solomon Islands Dollar</Currency>
+            <Capitale>Honiara</Capitale>
+            <TimeZone>UTC+11:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Somalia</Name>
+            <Prefix>252</Prefix>
+            <Currency>Somali Shilling</Currency>
+            <Capitale>Mogadishu</Capitale>
+            <TimeZone>UTC+03:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>South Africa</Name>
+            <Prefix>27</Prefix>
+            <Currency>Rand</Currency>
+            <Capitale>Cape Town</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code>KR</Code>
+            <Name>South korea</Name>
+            <Prefix>82</Prefix>
+            <Currency>Won</Currency>
+            <Capitale>Seoul</Capitale>
+            <TimeZone>UTC+09:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>South Sudan</Name>
+            <Prefix>211</Prefix>
+            <Currency></Currency>
+            <Capitale></Capitale>
+            <TimeZone>UTC+03:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Spain</Name>
+            <Prefix>34</Prefix>
+            <Currency>Euro</Currency>
+            <Capitale>Madrid</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Sri Lanka</Name>
+            <Prefix>94</Prefix>
+            <Currency>Sri Lankan Rupee</Currency>
+            <Capitale>Colombo</Capitale>
+            <TimeZone>UTC+05:30</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Sudan</Name>
+            <Prefix>249</Prefix>
+            <Currency>Sudanese Pound</Currency>
+            <Capitale>Khartoum</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>SuriName</Name>
+            <Prefix>597</Prefix>
+            <Currency>Surinamese Dollar</Currency>
+            <Capitale>Paramaribo</Capitale>
+            <TimeZone>UTC-03:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Swaziland</Name>
+            <Prefix>268</Prefix>
+            <Currency>Lilangeni</Currency>
+            <Capitale>Mbabane</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Sweden</Name>
+            <Prefix>46</Prefix>
+            <Currency>Swedish Krona</Currency>
+            <Capitale>Stockholm</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Switzerland</Name>
+            <Prefix>41</Prefix>
+            <Currency>Swiss Franc</Currency>
+            <Capitale>Bern</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Syria</Name>
+            <Prefix>963</Prefix>
+            <Currency>Syrian Pound</Currency>
+            <Capitale>Damascus</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst>UTC+03:00</Dst>
+            <DstBegin>3003</DstBegin>
+            <DstEnd>2610</DstEnd>
+        </Country>
+
+
+        <Country>
+            <Code></Code>
+            <Name>Tajikistan</Name>
+            <Prefix>992</Prefix>
+            <Currency>Somoni</Currency>
+            <Capitale>Dushanbe</Capitale>
+            <TimeZone>UTC+05:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Tanzania</Name>
+            <Prefix>255</Prefix>
+            <Currency>Tanzanian Schilling</Currency>
+            <Capitale>Dar es Salaam</Capitale>
+            <TimeZone>UTC+03:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Thailand</Name>
+            <Prefix>66</Prefix>
+            <Currency>Thai Baht</Currency>
+            <Capitale>Bangkok</Capitale>
+            <TimeZone>UTC+07:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Togo</Name>
+            <Prefix>228</Prefix>
+            <Currency>West African CFA Franc</Currency>
+            <Capitale>Lome</Capitale>
+            <TimeZone>UTC+00:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Tokelau</Name>
+            <Prefix>690</Prefix>
+            <Currency>Dollar néo-zélandais</Currency>
+            <Capitale></Capitale>
+            <TimeZone>UTC+13:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Tonga</Name>
+            <Prefix>676</Prefix>
+            <Currency>Pa anga</Currency>
+            <Capitale>Nuku alofa</Capitale>
+            <TimeZone>UTC+13:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Trinidad and Tobago</Name>
+            <Prefix>1868</Prefix>
+            <Currency>Trinidad and Tobago Dollar</Currency>
+            <Capitale>Port-of-Spain</Capitale>
+            <TimeZone>UTC-04:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Tunisia</Name>
+            <Prefix>216</Prefix>
+            <Currency>Tunisian dinar</Currency>
+            <Capitale>Tunis</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Turkey</Name>
+            <Prefix>90</Prefix>
+            <Currency>Turkish Lira</Currency>
+            <Capitale>Ankara</Capitale>
+            <TimeZone>UTC+03:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Turkmenistan</Name>
+            <Prefix>993</Prefix>
+            <Currency>Turkmen New Manat</Currency>
+            <Capitale>Ashgabat</Capitale>
+            <TimeZone>UTC+05:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Turks and Caicos Islands</Name>
+            <Prefix>1649</Prefix>
+            <Currency>Dollar américain</Currency>
+            <Capitale>Cockburn Town</Capitale>
+            <TimeZone>UTC-05:00</TimeZone>
+            <Dst>UTC-04:00</Dst>
+            <DstBegin>1103</DstBegin>
+            <DstEnd>0411</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Tuvalu</Name>
+            <Prefix>688</Prefix>
+            <Currency>Tuvaluan Dollar</Currency>
+            <Capitale>Vaiaku</Capitale>
+            <TimeZone>UTC+12:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Uganda</Name>
+            <Prefix>256</Prefix>
+            <Currency>Ugandan Shilling</Currency>
+            <Capitale>Kampala</Capitale>
+            <TimeZone>UTC+03:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Ukraine</Name>
+            <Prefix>380</Prefix>
+            <Currency>Hryvnia</Currency>
+            <Capitale>Kiev</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst>UTC+03:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>United Arab Emirates</Name>
+            <Prefix>971</Prefix>
+            <Currency>Dirham</Currency>
+            <Capitale>Abu Dhabi</Capitale>
+            <TimeZone>UTC+04:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>United Kingdom</Name>
+            <Prefix>44</Prefix>
+            <Currency>Pound Sterling</Currency>
+            <Capitale>London</Capitale>
+            <TimeZone>UTC+00:00</TimeZone>
+            <Dst>UTC+01:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>United States of America</Name>
+            <Prefix>1</Prefix>
+            <Currency>United States Dollar</Currency>
+            <Capitale>Washington</Capitale>
+            <TimeZone>UTC-05:00</TimeZone>
+            <Dst>UTC-04:00</Dst>
+            <DstBegin>1103</DstBegin>
+            <DstEnd>0411</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Uruguay</Name>
+            <Prefix>598</Prefix>
+            <Currency>Uruguayan Peso</Currency>
+            <Capitale>Montevideo</Capitale>
+            <TimeZone>UTC-03:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Uzbekistan</Name>
+            <Prefix>998</Prefix>
+            <Currency>Uzbekistan Som</Currency>
+            <Capitale>Tashkent</Capitale>
+            <TimeZone>UTC+05:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Vanuatu</Name>
+            <Prefix>678</Prefix>
+            <Currency>Vanuatu Vatu</Currency>
+            <Capitale>Port-Vila</Capitale>
+            <TimeZone>UTC+11:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code>VA</Code>
+            <Name>Vatican</Name>
+            <Prefix>379</Prefix>
+            <Currency>Euro</Currency>
+            <Capitale>vatican</Capitale>
+            <TimeZone>UTC+01:00</TimeZone>
+            <Dst>UTC+02:00</Dst>
+            <DstBegin>2503</DstBegin>
+            <DstEnd>2810</DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Venezuela</Name>
+            <Prefix>58</Prefix>
+            <Currency>Bolivar Fuerte</Currency>
+            <Capitale>Caracas</Capitale>
+            <TimeZone>UTC-04:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Vietnam</Name>
+            <Prefix>84</Prefix>
+            <Currency>Dong</Currency>
+            <Capitale>Hanoi</Capitale>
+            <TimeZone>UTC+07:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Wallis and Futuna</Name>
+            <Prefix>681</Prefix>
+            <Currency></Currency>
+            <Capitale></Capitale>
+            <TimeZone>UTC+12:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Yemen</Name>
+            <Prefix>967</Prefix>
+            <Currency>Yemeni Rial</Currency>
+            <Capitale>Sanaa</Capitale>
+            <TimeZone>UTC+03:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Zambia</Name>
+            <Prefix>260</Prefix>
+            <Currency>Zambian Kwacha</Currency>
+            <Capitale>Lusaka</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+        <Country>
+            <Code></Code>
+            <Name>Zimbabwe</Name>
+            <Prefix>263</Prefix>
+            <Currency>United States Dollar</Currency>
+            <Capitale>Harare</Capitale>
+            <TimeZone>UTC+02:00</TimeZone>
+            <Dst></Dst>
+            <DstBegin></DstBegin>
+            <DstEnd></DstEnd>
+        </Country>
+
+    </Countries>
+</ListCountry>

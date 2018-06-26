@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">PrefixTools</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Configurações</string>
+
+    <!-- Home -->
+    <string name="activity_home_title">Casa</string>
+    <string name="drive_mode_activated">Modo de condução ativado</string>
+    <string name="drive_mode_desactivated">Modo de condução desativado</string>
+    <string name="select_country">Selecione o pais</string>
+    <string name="select_contact">selecionar contato</string>
+    <string name="enter_phone_number">Insira um número de telefone</string>
+
+    <!--Contacts-->
+    <string name="activity_contacts_list_title">Contatos</string>
+    <string name="favorie_contacts_title">favorito</string>
+    <string name="last_contacts_title">último</string>
+    <string name="all_contacts_title">Contatos</string>
+
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!--Country-->
+    <string name="activity_country_list_title">Paises</string>
+    <string name="activity_country_details_title">Detalhes do país</string>
+    <string name="activity_country_edit_title">editar Detalhes</string>
+    <string name="activity_country_add_title">Adicionar novo país</string>
+    <string name="add_country_country_label">País :</string>
+    <string name="add_country_prefix_label">Prefixo :</string>
+    <string name="add_country_currency_label">Moeda :</string>
+    <string name="add_country_capital_label">Capital :</string>
+    <string name="add_country_time_zone_label">Fuso horário :</string>
+    <string name="add_country_time_local_label">Hora local :</string>
+    <string name="btn_send">Enviar</string>
+    <string name="btn_select">Selecione</string>
+    <string name="email_title_country_proposition">Country Prefix proposition</string>
+    <string name="email_title_country_modification">Country Prefix modification</string>
+    <string name="email_title_send_to_admin">Enviar email para o administrador</string>
+    <string name="prefix_copied">Copiado</string>
+    <string name="country_edit">Editar</string>
+    <string name="country_search">Pesquisa</string>
+
+    <!--Drive-->
+    <string name="activity_drive_title">Modo de condução</string>
+    <string name="activity_drive_message">Mensagem: </string>
+    <string name="btn_save">Salve </string>
+
+    <!--Suggestions-->
+    <string name="activity_suggestions_title">Sugestões</string>
+
+    <!--Evaluation-->
+    <string name="activity_eval">Avaliação</string>
+
+
+    <!--Pub Test-->
+    <!--<string name="pub_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="pub_intertitiel_id">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--Pub production-->
+    <string name="pub_id">ca-app-pub-3182350733466912/2975675581</string>
+    <string name="pub_intertitiel_id">ca-app-pub-3182350733466912/8212117159</string>
+
+</resources>

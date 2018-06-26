@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">PrefixTools</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">настройки</string>
+
+    <!-- Home -->
+    <string name="activity_home_title">Главная</string>
+    <string name="drive_mode_activated">Режим вождения включен</string>
+    <string name="drive_mode_desactivated">Режим вождения отключен</string>
+    <string name="select_country">выберите страну</string>
+    <string name="select_contact">выбрать контакт</string>
+    <string name="enter_phone_number">Введите номер телефона</string>
+
+    <!--Contacts-->
+    <string name="activity_contacts_list_title">контакты</string>
+    <string name="favorie_contacts_title">любимец</string>
+    <string name="last_contacts_title">Последний</string>
+    <string name="all_contacts_title">контакты</string>
+
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!--Country-->
+    <string name="activity_country_list_title">страны</string>
+    <string name="activity_country_details_title">Информация о стране</string>
+    <string name="activity_country_edit_title">Редактировать детали</string>
+    <string name="activity_country_add_title">Добавить новую страну</string>
+    <string name="add_country_country_label">Страна:</string>
+    <string name="add_country_prefix_label">Префикс:</string>
+    <string name="add_country_currency_label">валюта:</string>
+    <string name="add_country_capital_label">Столица:</string>
+    <string name="add_country_time_zone_label">Часовой пояс:</string>
+    <string name="add_country_time_local_label">Местный час :</string>
+    <string name="btn_send">послать</string>
+    <string name="btn_select">Выбрать</string>
+    <string name="email_title_country_proposition">Country Prefix proposition</string>
+    <string name="email_title_country_modification">Country Prefix modification</string>
+    <string name="email_title_send_to_admin">Отправить письмо администратору</string>
+    <string name="prefix_copied">скопированный</string>
+    <string name="country_edit">редактировать</string>
+    <string name="country_search">поиск</string>
+
+    <!--Drive-->
+    <string name="activity_drive_title">Режим вождения</string>
+    <string name="activity_drive_message">Сообщение: </string>
+    <string name="btn_save">Сохранить</string>
+
+    <!--Suggestions-->
+    <string name="activity_suggestions_title">Предложения</string>
+
+    <!--Evaluation-->
+    <string name="activity_eval">оценка</string>
+
+
+    <!--Pub Test-->
+    <!--<string name="pub_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="pub_intertitiel_id">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--Pub production-->
+    <string name="pub_id">ca-app-pub-3182350733466912/2975675581</string>
+    <string name="pub_intertitiel_id">ca-app-pub-3182350733466912/8212117159</string>
+
+</resources>

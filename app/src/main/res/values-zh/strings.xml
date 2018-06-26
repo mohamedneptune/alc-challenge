@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">PrefixTools</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">设置</string>
+
+    <!-- Home -->
+    <string name="activity_home_title">家</string>
+    <string name="drive_mode_activated">驾驶模式启用</string>
+    <string name="drive_mode_desactivated">驾驶模式被禁用</string>
+    <string name="select_country">选择国家</string>
+    <string name="select_contact">选择联系人</string>
+    <string name="enter_phone_number">输入电话号码</string>
+
+    <!--Contacts-->
+    <string name="activity_contacts_list_title">往来</string>
+    <string name="favorie_contacts_title">喜爱</string>
+    <string name="last_contacts_title">持续</string>
+    <string name="all_contacts_title">往来</string>
+
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!--Country-->
+    <string name="activity_country_list_title">国家</string>
+    <string name="activity_country_details_title">国家细节</string>
+    <string name="activity_country_edit_title">编辑详情</string>
+    <string name="activity_country_add_title">添加新的国家</string>
+    <string name="add_country_country_label">国家：</string>
+    <string name="add_country_prefix_label">字首 ：</string>
+    <string name="add_country_currency_label">货币：</string>
+    <string name="add_country_capital_label">首都 ：</string>
+    <string name="add_country_time_zone_label">时区 ：</string>
+    <string name="add_country_time_local_label">当地时间：</string>
+    <string name="btn_send">发送</string>
+    <string name="btn_select">选择</string>
+    <string name="email_title_country_proposition">Country Prefix proposition</string>
+    <string name="email_title_country_modification">Country Prefix modification</string>
+    <string name="email_title_send_to_admin">发送邮件给管理员</string>
+    <string name="prefix_copied">复制</string>
+    <string name="country_edit">编辑</string>
+    <string name="country_search">搜索</string>
+
+    <!--Drive-->
+    <string name="activity_drive_title">驾驶模式</string>
+    <string name="activity_drive_message">信息： </string>
+    <string name="btn_save">保存</string>
+
+    <!--Suggestions-->
+    <string name="activity_suggestions_title">建议</string>
+
+    <!--Evaluation-->
+    <string name="activity_eval">评测</string>
+
+
+    <!--Pub Test-->
+    <!--<string name="pub_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="pub_intertitiel_id">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--Pub production-->
+    <string name="pub_id">ca-app-pub-3182350733466912/2975675581</string>
+    <string name="pub_intertitiel_id">ca-app-pub-3182350733466912/8212117159</string>
+
+</resources>
