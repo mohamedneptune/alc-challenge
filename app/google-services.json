@@ -1,27 +1,35 @@
 {
   "project_info": {
-    "project_number": "927250298716",
-    "firebase_url": "https://prefix-96454.firebaseio.com",
-    "project_id": "prefix-96454",
-    "storage_bucket": "prefix-96454.appspot.com"
+    "project_number": "199237363107",
+    "firebase_url": "https://alc-diarymohamed.firebaseio.com",
+    "project_id": "alc-diarymohamed",
+    "storage_bucket": "alc-diarymohamed.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:927250298716:android:0888317016fda95b",
+        "mobilesdk_app_id": "1:199237363107:android:e3aad29dcbc4c79d",
         "android_client_info": {
-          "package_name": "com.shams.prefix"
+          "package_name": "com.alc.diarymohamed"
         }
       },
       "oauth_client": [
         {
-          "client_id": "927250298716-tp7v5f8bdt7m4l2aj4js1blsu2s11rv2.apps.googleusercontent.com",
+          "client_id": "199237363107-62l2ane0s0a8gdpstuajm1e9j9pdumjd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alc.diarymohamed",
+            "certificate_hash": "39260f4119bae6eb063feac63c9d3554b032ebf8"
+          }
+        },
+        {
+          "client_id": "199237363107-q637i1i5p34s9euke57uev3mq5boo68t.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBWjm-omJ7T533r_1nWwwVTqJGpBQdtViU"
+          "current_key": "AIzaSyCRUAzREOFUnvHQ8ncgw6uqzK80D49qwwo"
         }
       ],
       "services": {
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "199237363107-q637i1i5p34s9euke57uev3mq5boo68t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
