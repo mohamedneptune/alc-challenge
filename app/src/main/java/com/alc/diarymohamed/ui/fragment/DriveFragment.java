@@ -11,9 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 import com.alc.diarymohamed.R;
 
 public class DriveFragment extends Fragment implements View.OnClickListener{
@@ -26,7 +23,6 @@ public class DriveFragment extends Fragment implements View.OnClickListener{
     private Button mDriveSaveButton;
     private EditText mDriveEditText;
     private SharedPreferences mSharedPreferences;
-    private AdView mAdView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -37,10 +33,6 @@ public class DriveFragment extends Fragment implements View.OnClickListener{
         mSharedPreferences = mContext.getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
 
         mView = inflater.inflate(R.layout.fragment_drive, container, false);
-
-        mAdView = mView.findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
 
         mDriveSaveButton = (Button) mView.findViewById(R.id.drive_save_button);
         mDriveEditText = (EditText)  mView.findViewById(R.id.drive_edit_text);

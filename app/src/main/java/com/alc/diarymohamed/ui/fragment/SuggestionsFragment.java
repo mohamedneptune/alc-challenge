@@ -11,10 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.firebase.analytics.FirebaseAnalytics;
 import com.alc.diarymohamed.R;
 import com.alc.diarymohamed.shared.Constants;
 
@@ -27,8 +23,6 @@ public class SuggestionsFragment extends Fragment implements View.OnClickListene
     private Context mContext;
     private Button mSuggestionsSendButton;
     private EditText mSuggestionEditText;
-    private FirebaseAnalytics mFirebaseAnalytics;
-    private AdView mAdView;
     private Bundle mBundle;
 
     @Override
@@ -37,14 +31,7 @@ public class SuggestionsFragment extends Fragment implements View.OnClickListene
         myLayoutInflater = inflater;
         mContext = getActivity().getApplicationContext();
 
-        // Obtain the FirebaseAnalytics instance.
-        mFirebaseAnalytics = FirebaseAnalytics.getInstance(mContext);
-
         mView = inflater.inflate(R.layout.fragment_suggestions, container, false);
-
-        mAdView = mView.findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
 
         mSuggestionsSendButton = (Button) mView.findViewById(R.id.suggestions_send_button);
         mSuggestionEditText = (EditText)  mView.findViewById(R.id.suggestions_edit_text);
@@ -54,11 +41,6 @@ public class SuggestionsFragment extends Fragment implements View.OnClickListene
         mSuggestionsSendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mBundle = new Bundle();
-                mBundle.putString(FirebaseAnalytics.Param.ITEM_ID, "btn_Suggestions_send");
-                mBundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "btn_Suggestions_send");
-                mBundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "btn");
-                mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, mBundle);
                 sendSuggestions();
             }
         });

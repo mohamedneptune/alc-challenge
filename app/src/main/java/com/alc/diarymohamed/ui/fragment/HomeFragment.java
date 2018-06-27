@@ -31,14 +31,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdSize;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.InterstitialAd;
-import com.google.firebase.analytics.FirebaseAnalytics;
-import com.google.firebase.crash.FirebaseCrash;
 import com.alc.diarymohamed.R;
 import com.alc.diarymohamed.data.helper.ContactsHelper;
 import com.alc.diarymohamed.data.helper.CountryHelper;
@@ -88,8 +80,6 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     private int mPositionCountryFlag;
     private Boolean mContactDial;
     private RelativeLayout mRootLayout;
-    private FirebaseAnalytics mFirebaseAnalytics;
-    private AdView mAdView;
     private Bundle mBundle;
 
 
@@ -101,17 +91,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         mContext = getActivity().getApplicationContext();
         mSharedPreferences = mContext.getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
 
-        // Obtain the FirebaseAnalytics instance.
-        mFirebaseAnalytics = FirebaseAnalytics.getInstance(getContext());
-
         mView = inflater.inflate(R.layout.fragment_home, container, false);
-
-        mAdView = mView.findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
-
-
-
 
 
         mRootLayout = (RelativeLayout) mView.findViewById(R.id.home_root_layout);
@@ -149,8 +129,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             mContactsHelper = new ContactsHelper(mContext);
             mContactModels = mContactsHelper.getAllContacts();
         } catch (Exception e) {
-            FirebaseCrash.logcat(Log.ERROR, TAG, "Exception caught");
-            FirebaseCrash.report(e);
+            e.printStackTrace();
         }
 
         loadFromSharedPreference();
@@ -224,11 +203,6 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         mFabButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mBundle = new Bundle();
-                mBundle.putString(FirebaseAnalytics.Param.ITEM_ID, "btn_Home_call");
-                mBundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "btn_Home_call");
-                mBundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "btn");
-                mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, mBundle);
                 try {
                     if (checkSelfPermission(getActivity(), Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                         ActivityCompat.requestPermissions(
@@ -239,8 +213,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                         callFonction();
                     }
                 } catch (Exception e) {
-                    FirebaseCrash.logcat(Log.ERROR, TAG, "Exception caught");
-                    FirebaseCrash.report(e);
+                    e.printStackTrace();
                 }
             }
         });
@@ -283,8 +256,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 fillCountrySpinner(mCountryModels);
             }
         } catch (Exception e) {
-            FirebaseCrash.logcat(Log.ERROR, TAG, "Exception caught");
-            FirebaseCrash.report(e);
+            e.printStackTrace();
         }
     }
 
@@ -366,19 +338,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.home_country_all_btn:
-                mBundle = new Bundle();
-                mBundle.putString(FirebaseAnalytics.Param.ITEM_ID, "btn_Home_allCountry");
-                mBundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "btn_Home_allCountry");
-                mBundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "btn");
-                mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, mBundle);
                 ((MainActivity) getActivity()).setFragment(1, CountryFragment.class);
                 break;
             case R.id.home_contact_dial_btn:
-                mBundle = new Bundle();
-                mBundle.putString(FirebaseAnalytics.Param.ITEM_ID, "btn_Home_dial");
-                mBundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "btn_Home_dial");
-                mBundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "btn");
-                mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, mBundle);
                 mContactNumberEditText.setText("");
                 mContactSpinner.setSelection(0);
                 InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
@@ -386,11 +348,6 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 break;
 
             case R.id.home_contact_all_btn:
-                mBundle = new Bundle();
-                mBundle.putString(FirebaseAnalytics.Param.ITEM_ID, "btn_Home_contact_all");
-                mBundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "btn_Home_contact_all");
-                mBundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "btn");
-                mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, mBundle);
                 ((MainActivity) getActivity()).setFragment(2, AllContactsFragment.class);
                 break;
         }

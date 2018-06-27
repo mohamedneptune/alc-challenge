@@ -25,11 +25,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.firebase.analytics.FirebaseAnalytics;
-import com.google.firebase.crash.FirebaseCrash;
 import com.alc.diarymohamed.BuildConfig;
 import com.alc.diarymohamed.R;
 import com.alc.diarymohamed.data.helper.ContactsHelper;
@@ -62,8 +57,6 @@ public class AllContactsFragment extends Fragment implements
     private static View mView;
     private LayoutInflater myLayoutInflater;
     private Context mContext;
-    private AdView mAdView;
-    private FirebaseAnalytics mFirebaseAnalytics;
 
     private static final int REQUEST_PERMISSION = 2001;
     private static final String ARG_SECTION_NUMBER = "section_number";
@@ -107,13 +100,6 @@ public class AllContactsFragment extends Fragment implements
 
         mBundle = savedInstanceState;
 
-        // Obtain the FirebaseAnalytics instance.
-        mFirebaseAnalytics = FirebaseAnalytics.getInstance(getContext());
-
-        mAdView = mView.findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
-
         setUpRecyclerView();
 
         mFieldNames = mSortByName;
@@ -133,15 +119,7 @@ public class AllContactsFragment extends Fragment implements
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-                mBundle = new Bundle();
-                mBundle.putString(FirebaseAnalytics.Param.ITEM_ID, "menu_ContactsAll_Back");
-                mBundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "menu_ContactsAll_Back");
-                mBundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "menu");
-                mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, mBundle);
                 return true;
-            //case R.id.menu_base:
-                //saveContactsInDataBase(mContactCursor);
-                //return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -152,12 +130,6 @@ public class AllContactsFragment extends Fragment implements
 
         menu.clear();
         inflater.inflate(R.menu.contacts_list_menu, menu);
-
-        mBundle = new Bundle();
-        mBundle.putString(FirebaseAnalytics.Param.ITEM_ID, "menu_ContactsAll_Search");
-        mBundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "menu_ContactsAll_Search");
-        mBundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "menu");
-        mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, mBundle);
 
         final SearchView searchView = (SearchView) MenuItemCompat.getActionView(menu.findItem(R.id.menu_search));
         //SearchManager searchManager = (SearchManager) getActivity().getSystemService(SEARCH_SERVICE);
@@ -210,9 +182,7 @@ public class AllContactsFragment extends Fragment implements
                 getLoaderManager().initLoader(LOADER_ID, mBundle, this);
             }
         }catch (Exception e){
-            //SLF_LOGGER.error("error : " , e);
-            FirebaseCrash.logcat(Log.ERROR, TAG, "Exception caught");
-            FirebaseCrash.report(e);
+            e.printStackTrace();
         }
     }
 

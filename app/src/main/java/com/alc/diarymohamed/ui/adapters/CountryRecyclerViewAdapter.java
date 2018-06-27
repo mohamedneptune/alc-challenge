@@ -13,10 +13,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import com.google.android.gms.ads.AdView;
-import com.google.firebase.analytics.FirebaseAnalytics;
-import com.google.firebase.crash.FirebaseCrash;
 import com.alc.diarymohamed.R;
 import com.alc.diarymohamed.data.model.CountryModel;
 import com.alc.diarymohamed.shared.Constants;
@@ -36,8 +32,6 @@ public class CountryRecyclerViewAdapter extends RecyclerView.Adapter<CountryRecy
     private final List<String> mCountriesName;
     private final int mItemList;
     private int mPositionCountryFlag, mPositionSelectedCountryFlag;
-    private FirebaseAnalytics mFirebaseAnalytics;
-    private AdView mAdView;
     private Bundle mBundle;
 
     public CountryRecyclerViewAdapter(Context context, List<CountryModel> countries,
@@ -46,9 +40,6 @@ public class CountryRecyclerViewAdapter extends RecyclerView.Adapter<CountryRecy
         mCountries = countries;
         mCountriesName = countriesName;
         mItemList = item_list;
-        // Obtain the FirebaseAnalytics instance.
-        mFirebaseAnalytics = FirebaseAnalytics.getInstance(context);
-
     }
 
     public static class Holder extends RecyclerView.ViewHolder {
@@ -89,9 +80,7 @@ public class CountryRecyclerViewAdapter extends RecyclerView.Adapter<CountryRecy
         mPositionCountryFlag = mCountriesName.indexOf(countryModel.getName());
         holder.mCountryFlagImageView.setImageResource(Constants.DEFAULT_RESOURCE_FLAGS_LIST[mPositionCountryFlag]);
         }catch(Exception e){
-            //SLF_LOGGER.error("error " , e);
-            FirebaseCrash.logcat(Log.ERROR, TAG, "Exception caught");
-            FirebaseCrash.report(e);
+          e.printStackTrace();
         }
 
         holder.mRootLayout.setOnClickListener(this);
@@ -99,12 +88,6 @@ public class CountryRecyclerViewAdapter extends RecyclerView.Adapter<CountryRecy
             @Override
             public void onClick(View view) {
                 try {
-                    mBundle = new Bundle();
-                    mBundle.putString(FirebaseAnalytics.Param.ITEM_ID, (mCountries.get(position).getName()));
-                    mBundle.putString(FirebaseAnalytics.Param.ITEM_NAME, (mCountries.get(position).getName()));
-                    mBundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "item_list_country");
-                    mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, mBundle);
-
                     mPositionSelectedCountryFlag = mCountriesName.indexOf(
                             mCountries.get(position).getName());
                     saveLastIdTaskToSharedPreference(mCountries.get(position).getName(),
@@ -113,9 +96,7 @@ public class CountryRecyclerViewAdapter extends RecyclerView.Adapter<CountryRecy
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     mContext.startActivity(intent);
                 } catch (Exception e) {
-                    //SLF_LOGGER.error("error: ", e);
-                    FirebaseCrash.logcat(Log.ERROR, TAG, "Exception caught");
-                    FirebaseCrash.report(e);
+                    e.printStackTrace();
                 }
             }
         });

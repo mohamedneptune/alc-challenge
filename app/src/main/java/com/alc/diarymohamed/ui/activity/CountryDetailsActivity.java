@@ -19,11 +19,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.firebase.analytics.FirebaseAnalytics;
-import com.google.firebase.crash.FirebaseCrash;
 import com.alc.diarymohamed.R;
 import com.alc.diarymohamed.data.helper.CountryHelper;
 import com.alc.diarymohamed.data.model.CountryModel;
@@ -251,9 +246,7 @@ public class CountryDetailsActivity extends AppCompatActivity implements View.On
             if (null != localTime)
                 time = localTime.getHour() + (" : ") + localTime.getMinute();
         } catch (Exception e) {
-            //SLF_LOGGER.info("Error e", e);
-            FirebaseCrash.logcat(Log.ERROR, TAG, "Exception caught");
-            FirebaseCrash.report(e);
+            e.printStackTrace();
         }
         return time;
     }
@@ -273,9 +266,7 @@ public class CountryDetailsActivity extends AppCompatActivity implements View.On
                     try {
                         mDetailCountryLocalTime.setText(getLocalTime(mCountryModel.getTimeZone()));
                     } catch (Exception e) {
-                        //SLF_LOGGER.error("error setWatchTime : ", e);
-                        FirebaseCrash.logcat(Log.ERROR, TAG, "Exception caught setWatchTime");
-                        FirebaseCrash.report(e);
+                        e.printStackTrace();
                     }
                 }
             }
@@ -284,9 +275,7 @@ public class CountryDetailsActivity extends AppCompatActivity implements View.On
         try {
             registerReceiver(mBroadcastReceiver, new IntentFilter(Intent.ACTION_TIME_TICK));
         } catch (Exception e) {
-            //SLF_LOGGER.error("error registerReceiver : ", e);
-            FirebaseCrash.logcat(Log.ERROR, TAG, "Exception caught");
-            FirebaseCrash.report(e);
+            e.printStackTrace();
         }
     }
 
@@ -297,9 +286,7 @@ public class CountryDetailsActivity extends AppCompatActivity implements View.On
             try {
                 unregisterReceiver(mBroadcastReceiver);
             } catch (Exception e) {
-                //SLF_LOGGER.error("error unregisterReceiver: ", e);
-                FirebaseCrash.logcat(Log.ERROR, TAG, "Exception caught unregisterReceiver");
-                FirebaseCrash.report(e);
+                e.printStackTrace();
             }
         }
     }

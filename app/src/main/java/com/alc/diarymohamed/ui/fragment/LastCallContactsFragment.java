@@ -8,9 +8,6 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 import com.alc.diarymohamed.R;
 
 /**
@@ -24,7 +21,6 @@ public class LastCallContactsFragment extends Fragment {
     private static View mView;
     private LayoutInflater myLayoutInflater;
     private Context mContext;
-    private AdView mAdView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -33,10 +29,6 @@ public class LastCallContactsFragment extends Fragment {
         mContext = getActivity().getApplicationContext();
 
         mView = inflater.inflate(R.layout.fragment_last_call_contacts, container, false);
-
-        mAdView = mView.findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
 
         return mView;
     }
@@ -55,7 +47,5 @@ public class LastCallContactsFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        //SLF_LOGGER.info("onresume");
-
     }
 }

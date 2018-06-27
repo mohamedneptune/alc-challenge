@@ -19,11 +19,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.firebase.analytics.FirebaseAnalytics;
-import com.google.firebase.crash.FirebaseCrash;
 import com.alc.diarymohamed.R;
 import com.alc.diarymohamed.data.helper.CountryHelper;
 import com.alc.diarymohamed.data.model.CountryModel;
@@ -58,8 +53,6 @@ public class CountryFragment extends Fragment implements CountriesNotifier, View
     private String [] mFieldNames;
     private String [] mSortByName = {"Name"};
     private String [] mSortByPrefix = {"Prefix"};
-    private FirebaseAnalytics mFirebaseAnalytics;
-    private AdView mAdView;
     private Bundle mBundle;
 
     @Override
@@ -68,14 +61,7 @@ public class CountryFragment extends Fragment implements CountriesNotifier, View
         myLayoutInflater = inflater;
         mContext = getActivity().getApplicationContext();
 
-        // Obtain the FirebaseAnalytics instance.
-        mFirebaseAnalytics = FirebaseAnalytics.getInstance(getContext());
-
         mView = inflater.inflate(R.layout.fragment_country, container, false);
-
-        mAdView = mView.findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
 
         mRecyclerView = (RecyclerView) mView.findViewById(R.id.countries_recyclerView);
 
@@ -112,12 +98,7 @@ public class CountryFragment extends Fragment implements CountriesNotifier, View
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-                mBundle = new Bundle();
-                mBundle.putString(FirebaseAnalytics.Param.ITEM_ID, "menu_CountryList_Back");
-                mBundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "menu_CountryList_Back");
-                mBundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "menu");
-                mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, mBundle);
-                return true;
+               return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -128,12 +109,6 @@ public class CountryFragment extends Fragment implements CountriesNotifier, View
 
         menu.clear();
         inflater.inflate(R.menu.country_list_menu, menu);
-
-        mBundle = new Bundle();
-        mBundle.putString(FirebaseAnalytics.Param.ITEM_ID, "menu_CountryList_Search");
-        mBundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "menu_CountryList_Search");
-        mBundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "menu");
-        mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, mBundle);
 
         final SearchView searchView = (SearchView) MenuItemCompat.getActionView(menu.findItem(R.id.menu_search));
         //SearchManager searchManager = (SearchManager) getActivity().getSystemService(SEARCH_SERVICE);
@@ -194,12 +169,10 @@ public class CountryFragment extends Fragment implements CountriesNotifier, View
                 mCountriesRequest = new CountriesRequest(CountryFragment.this, mContext);
                 mCountriesRequest.getCountries(response);
             } catch (IOException ioException) {
-                FirebaseCrash.logcat(Log.ERROR, TAG, "IOException caught");
-                FirebaseCrash.report(ioException);
+                ioException.printStackTrace();
             }
         } catch (Exception e) {
-            FirebaseCrash.logcat(Log.ERROR, TAG, "Exception caught");
-            FirebaseCrash.report(e);
+            e.printStackTrace();
         }
     }
 
@@ -215,7 +188,6 @@ public class CountryFragment extends Fragment implements CountriesNotifier, View
 
     @Override
     public void countriesXStreamParseFailed() {
-        FirebaseCrash.logcat(Log.WARN, TAG, "countriesXStreamParseFailed");
     }
 
     @Override
