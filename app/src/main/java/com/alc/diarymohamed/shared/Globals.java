@@ -9,8 +9,6 @@ import android.support.annotation.NonNull;
 import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
-
-import com.google.firebase.crash.FirebaseCrash;
 import com.alc.diarymohamed.data.model.TimeModel;
 
 import io.realm.Realm;
@@ -55,8 +53,7 @@ public class Globals {
             mRealm.commitTransaction();
             //mRealm.close();
         } catch (Exception e) {
-            FirebaseCrash.logcat(Log.ERROR, TAG, "Exception caught");
-            FirebaseCrash.report(e);
+            e.printStackTrace();
         }
 
         return mRealm;

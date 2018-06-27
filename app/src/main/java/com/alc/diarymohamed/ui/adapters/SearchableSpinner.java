@@ -17,8 +17,6 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.SpinnerAdapter;
 
-import com.google.firebase.crash.FirebaseCrash;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -100,8 +98,7 @@ public class SearchableSpinner extends android.support.v7.widget.AppCompatSpinne
                 if(!_searchableListDialog.isAdded()) {
                     _searchableListDialog.show(scanForActivity(_context).getFragmentManager(), "TAG");
                 }else{
-                    //SLF_LOGGER.info("_searchableListDialog.isAdded()");
-                    FirebaseCrash.logcat(Log.WARN, TAG, "searchableListDialog.isAdded()");
+                    Log.w(TAG,"searchableListDialog.isAdded()");
                 }
             }
         }

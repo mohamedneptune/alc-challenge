@@ -30,7 +30,6 @@ import com.alc.diarymohamed.ui.fragment.CountryFragment;
 import com.alc.diarymohamed.ui.fragment.DriveFragment;
 import com.alc.diarymohamed.ui.fragment.HomeFragment;
 import com.alc.diarymohamed.ui.fragment.SuggestionsFragment;
-import com.google.firebase.crash.FirebaseCrash;
 
 /**
  * Created by mbak on 26/06/18.
@@ -114,9 +113,7 @@ public class MainActivity extends AppCompatActivity
                     setFragment(2, AllContactsFragment.class);
                 }
             } catch (Exception e) {
-                //SLF_LOGGER.error("error ", e);
-                FirebaseCrash.logcat(Log.ERROR, TAG, "Exception caught");
-                FirebaseCrash.report(e);
+                e.printStackTrace();
             }
 
         } else if (id == R.id.nav_drive) {

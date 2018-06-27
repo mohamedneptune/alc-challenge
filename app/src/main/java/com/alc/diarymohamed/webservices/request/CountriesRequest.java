@@ -3,8 +3,6 @@ package com.alc.diarymohamed.webservices.request;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
-
-import com.google.firebase.crash.FirebaseCrash;
 import com.alc.diarymohamed.data.helper.CountryHelper;
 import com.alc.diarymohamed.data.model.CountryModel;
 import com.alc.diarymohamed.parser.ContainerData;
@@ -82,8 +80,7 @@ public class CountriesRequest {
 
                 }
             } catch (Exception e) {
-                FirebaseCrash.logcat(Log.ERROR, TAG, "Exception caught");
-                FirebaseCrash.report(e);
+                e.printStackTrace();
                 mCountriesNotifier.countriesXStreamParseFailed();
                 return false;
             }

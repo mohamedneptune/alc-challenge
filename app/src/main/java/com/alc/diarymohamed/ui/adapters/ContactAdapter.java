@@ -14,8 +14,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import com.google.firebase.crash.FirebaseCrash;
 import com.alc.diarymohamed.R;
 import com.alc.diarymohamed.data.model.ContactModel;
 import com.alc.diarymohamed.ui.activity.MainActivity;
@@ -80,9 +78,7 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.Contacts
                     saveSelectedUnserNumberToSharedPreference(getContactNumber(contactUri,mContext), userName);
                     replaceFragment();
                 } catch (Exception e) {
-                    //SLF_LOGGER.error("error: ", e);
-                    FirebaseCrash.logcat(Log.ERROR, TAG, "Exception caught");
-                    FirebaseCrash.report(e);
+                    e.printStackTrace();
                 }
             }
         });

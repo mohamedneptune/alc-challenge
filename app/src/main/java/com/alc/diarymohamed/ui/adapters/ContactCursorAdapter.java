@@ -17,9 +17,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import com.google.firebase.analytics.FirebaseAnalytics;
-import com.google.firebase.crash.FirebaseCrash;
 import com.alc.diarymohamed.R;
 import com.alc.diarymohamed.shared.Globals;
 import com.alc.diarymohamed.ui.activity.MainActivity;
@@ -34,13 +31,10 @@ public class ContactCursorAdapter extends CursorRecyclerViewAdapter<ContactCurso
 
     //private static final Logger SLF_LOGGER = LoggerFactory.getLogger(ContactCursorAdapter.class);
     private static final String TAG = "ContactCursorAdapter";
-    private FirebaseAnalytics mFirebaseAnalytics;
     private Bundle mBundle;
 
     public ContactCursorAdapter(Context context, Cursor cursor, String id) {
         super(context, cursor, id);
-        // Obtain the FirebaseAnalytics instance.
-        mFirebaseAnalytics = FirebaseAnalytics.getInstance(context);
     }
 
     @Override
@@ -83,19 +77,11 @@ public class ContactCursorAdapter extends CursorRecyclerViewAdapter<ContactCurso
             @Override
             public void onClick(View view) {
                 try {
-                    mBundle = new Bundle();
-                    mBundle.putString(FirebaseAnalytics.Param.ITEM_ID, "item_list_contact");
-                    mBundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "item_list_contact");
-                    mBundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "item_list_contact");
-                    mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, mBundle);
-
                     saveSelectedUnserNumberToSharedPreference(Globals.getContactNumber(contactUri,mContext),
                             username);
                     replaceFragment();
                 } catch (Exception e) {
-                    //SLF_LOGGER.error("error: ", e);
-                    FirebaseCrash.logcat(Log.ERROR, TAG, "Exception caught");
-                    FirebaseCrash.report(e);
+                    e.printStackTrace();
                 }
             }
         });

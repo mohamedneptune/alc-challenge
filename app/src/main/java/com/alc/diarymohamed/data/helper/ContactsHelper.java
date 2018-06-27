@@ -2,8 +2,6 @@ package com.alc.diarymohamed.data.helper;
 
 import android.content.Context;
 import android.util.Log;
-
-import com.google.firebase.crash.FirebaseCrash;
 import com.alc.diarymohamed.data.model.ContactModel;
 
 import io.realm.Realm;
@@ -60,7 +58,7 @@ public class ContactsHelper {
         } finally {
             mRealm.commitTransaction();
             if (contactModel == null) {
-                FirebaseCrash.logcat(Log.WARN, TAG, "contactModel == null");
+            Log.w(TAG,"contactModel == null");
             }
             mRealm.close();
         }
@@ -79,7 +77,7 @@ public class ContactsHelper {
         } finally {
             mRealm.commitTransaction();
             if (contactModels == null) {
-                FirebaseCrash.logcat(Log.WARN, TAG, "contactModel == null");
+                Log.w(TAG,"contactModels == null");
             }
         }
         return contactModels;
@@ -100,7 +98,7 @@ public class ContactsHelper {
         } finally {
             mRealm.commitTransaction();
             if (contactModels == null) {
-                FirebaseCrash.logcat(Log.WARN, TAG, "contactModel == null");
+                Log.w(TAG,"contactModels == null");
             }
         }
         return contactModels;
@@ -128,8 +126,7 @@ public class ContactsHelper {
         try {
             mRealm.close();
         } catch (Exception e) {
-            FirebaseCrash.logcat(Log.ERROR, TAG, "Exception caught");
-            FirebaseCrash.report(e);
+            e.printStackTrace();
         }
     }
 

@@ -2,8 +2,6 @@ package com.alc.diarymohamed.data.helper;
 
 import android.content.Context;
 import android.util.Log;
-
-import com.google.firebase.crash.FirebaseCrash;
 import com.alc.diarymohamed.data.model.CountryModel;
 
 import io.realm.Realm;
@@ -66,7 +64,7 @@ public class CountryHelper {
         } finally {
             mRealm.commitTransaction();
             if (countryModel == null) {
-                FirebaseCrash.logcat(Log.WARN, TAG, "countryModels == null");
+                Log.w(TAG,"countryModel == null");
             }
             mRealm.close();
         }
@@ -85,7 +83,7 @@ public class CountryHelper {
         } finally {
             mRealm.commitTransaction();
             if (countryModels == null) {
-                FirebaseCrash.logcat(Log.WARN, TAG, "countryModels == null");
+                Log.w(TAG,"countryModel == null");
             }
         }
         return countryModels;
@@ -108,7 +106,7 @@ public class CountryHelper {
         } finally {
             mRealm.commitTransaction();
             if (countryModels == null) {
-                FirebaseCrash.logcat(Log.WARN, TAG, "countryModels == null");
+                Log.w(TAG,"countryModel == null");
             }
         }
         return countryModels;
@@ -136,8 +134,7 @@ public class CountryHelper {
         try {
             mRealm.close();
         } catch (Exception e) {
-            FirebaseCrash.logcat(Log.ERROR, TAG, "Exception caught");
-            FirebaseCrash.report(e);
+            e.printStackTrace();
         }
     }
 
