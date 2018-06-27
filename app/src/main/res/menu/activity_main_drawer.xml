@@ -26,9 +26,8 @@
             android:icon="@drawable/menu_sugg"
             android:title="@string/activity_suggestions_title" />
         <item
-            android:id="@+id/nav_eval"
-            android:icon="@drawable/menu_eval"
-            android:title="@string/activity_eval" />
+            android:id="@+id/nav_exit"
+            android:title="@string/activity_exit" />
     </group>
 
 </menu>

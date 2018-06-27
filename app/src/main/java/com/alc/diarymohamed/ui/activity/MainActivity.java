@@ -121,10 +121,8 @@ public class MainActivity extends AppCompatActivity
         }else if (id == R.id.nav_suggest) {
             setFragment(4, SuggestionsFragment.class);
         }
-        else if (id == R.id.nav_eval) {
-            Intent i = new Intent(Intent.ACTION_VIEW);
-            i.setData(Uri.parse("market://details?id=" + getPackageName()));
-            startActivity(i);
+        else if (id == R.id.nav_exit) {
+            finish();
         }
 
 

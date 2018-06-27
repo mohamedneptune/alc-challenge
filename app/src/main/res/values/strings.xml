@@ -52,8 +52,8 @@
     <!--Suggestions-->
     <string name="activity_suggestions_title">Suggestions</string>
 
-    <!--Evaluation-->
-    <string name="activity_eval">Evaluation</string>
+    <!--Exit-->
+    <string name="activity_exit">Exit</string>
 
 
 </resources>
