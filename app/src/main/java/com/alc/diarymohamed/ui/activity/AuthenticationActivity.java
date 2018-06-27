@@ -32,10 +32,10 @@ import com.google.firebase.auth.GoogleAuthProvider;
 public class AuthenticationActivity extends AppCompatActivity {
 
     // TAG is for show some tag logs in LOG screen.
-    public static final String TAG = "MainActivity";
+    public static final String TAG = AuthenticationActivity.class.getSimpleName();
 
     // Request sing in code. Could be anything as you required.
-    public static final int RequestSignInCode = 7;
+    public static final int RequestSignInCode = 22;
 
     // Firebase Auth Object.
     public FirebaseAuth firebaseAuth;
