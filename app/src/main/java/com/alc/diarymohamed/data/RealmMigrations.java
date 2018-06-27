@@ -17,9 +17,9 @@ public class RealmMigrations implements RealmMigration {
     public void migrate(DynamicRealm dynamicRealm, long oldVersion, long newVersion) {
         final RealmSchema schema = dynamicRealm.getSchema();
 
-        if (oldVersion == 3) {
+        if (oldVersion == 1) {
 
-            Log.i("RealmMigrations","oldversion==3");
+            Log.i("RealmMigrations","oldversion==1");
         }
 
     }

@@ -13,7 +13,7 @@ public class PrefixApplication extends Application {
 
 
     private static Context GLOBAL_APP_CONTEXT;
-    private final static int SCHEMA_VERSION = 3;
+    private final static int SCHEMA_VERSION = 1;
 
     public static Context getGlobalAppContext() {
         return GLOBAL_APP_CONTEXT;
