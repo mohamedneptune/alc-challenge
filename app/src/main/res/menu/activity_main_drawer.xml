@@ -27,6 +27,7 @@
             android:title="@string/activity_suggestions_title" />
         <item
             android:id="@+id/nav_exit"
+            android:icon="@drawable/menu_logout"
             android:title="@string/activity_exit" />
     </group>
 
