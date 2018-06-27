@@ -18,7 +18,7 @@ import android.view.Window;
 
 import com.alc.diarymohamed.PrefixApplication;
 import com.alc.diarymohamed.R;
-import com.alc.diarymohamed.ui.fragment.DiaryFragment;
+import com.alc.diarymohamed.ui.fragment.CountryFragment;
 
 /**
  * Created by mbak on 26/06/18.
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        setFragment(0, DiaryFragment.class);
+        setFragment(0, CountryFragment.class);
 
     }
 
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-            setFragment(0, DiaryFragment.class);
+            setFragment(0, CountryFragment.class);
         }
         else if (id == R.id.nav_exit) {
             finish();

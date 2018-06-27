@@ -32,10 +32,10 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DiaryFragment extends Fragment implements CountriesNotifier, View.OnClickListener {
+public class CountryFragment extends Fragment implements CountriesNotifier, View.OnClickListener {
 
-    //private static final Logger SLF_LOGGER = LoggerFactory.getLogger(DiaryFragment.class);
-    private static final String TAG = "DiaryFragment";
+    //private static final Logger SLF_LOGGER = LoggerFactory.getLogger(CountryFragment.class);
+    private static final String TAG = "CountryFragment";
 
     private static View mView;
     private LayoutInflater myLayoutInflater;
@@ -57,7 +57,7 @@ public class DiaryFragment extends Fragment implements CountriesNotifier, View.O
         myLayoutInflater = inflater;
         mContext = getActivity().getApplicationContext();
 
-        mView = inflater.inflate(R.layout.fragment_diary, container, false);
+        mView = inflater.inflate(R.layout.fragment_country, container, false);
 
         mRecyclerView = (RecyclerView) mView.findViewById(R.id.countries_recyclerView);
 
@@ -162,7 +162,7 @@ public class DiaryFragment extends Fragment implements CountriesNotifier, View.O
                 String response = new String(buffer, 0, bytesRead, "utf-16");
                 inputStream.close();
 
-                mCountriesRequest = new CountriesRequest(DiaryFragment.this, mContext);
+                mCountriesRequest = new CountriesRequest(CountryFragment.this, mContext);
                 mCountriesRequest.getCountries(response);
             } catch (IOException ioException) {
                 ioException.printStackTrace();
