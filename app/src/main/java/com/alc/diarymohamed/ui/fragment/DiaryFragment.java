@@ -1,7 +1,6 @@
 package com.alc.diarymohamed.ui.fragment;
 
 
-import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
@@ -12,7 +11,6 @@ import android.support.v4.view.MenuItemCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -34,12 +32,10 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import static android.content.Context.SEARCH_SERVICE;
+public class DiaryFragment extends Fragment implements CountriesNotifier, View.OnClickListener {
 
-public class CountryFragment extends Fragment implements CountriesNotifier, View.OnClickListener {
-
-    //private static final Logger SLF_LOGGER = LoggerFactory.getLogger(CountryFragment.class);
-    private static final String TAG = "CountryFragment";
+    //private static final Logger SLF_LOGGER = LoggerFactory.getLogger(DiaryFragment.class);
+    private static final String TAG = "DiaryFragment";
 
     private static View mView;
     private LayoutInflater myLayoutInflater;
@@ -61,7 +57,7 @@ public class CountryFragment extends Fragment implements CountriesNotifier, View
         myLayoutInflater = inflater;
         mContext = getActivity().getApplicationContext();
 
-        mView = inflater.inflate(R.layout.fragment_country, container, false);
+        mView = inflater.inflate(R.layout.fragment_diary, container, false);
 
         mRecyclerView = (RecyclerView) mView.findViewById(R.id.countries_recyclerView);
 
@@ -166,7 +162,7 @@ public class CountryFragment extends Fragment implements CountriesNotifier, View
                 String response = new String(buffer, 0, bytesRead, "utf-16");
                 inputStream.close();
 
-                mCountriesRequest = new CountriesRequest(CountryFragment.this, mContext);
+                mCountriesRequest = new CountriesRequest(DiaryFragment.this, mContext);
                 mCountriesRequest.getCountries(response);
             } catch (IOException ioException) {
                 ioException.printStackTrace();

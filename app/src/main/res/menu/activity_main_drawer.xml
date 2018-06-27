@@ -7,24 +7,7 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/menu_accueil"
-            android:title="@string/activity_home_title" />
-        <item
-            android:id="@+id/nav_prefix"
-            android:icon="@drawable/menu_prefix"
-            android:title="@string/activity_country_list_title" />
-        <item
-            android:id="@+id/nav_contact"
-            android:icon="@drawable/menu_contact"
-            android:title="@string/activity_contacts_list_title" />
-        <item
-            android:id="@+id/nav_drive"
-            android:icon="@drawable/menu_drive"
-            android:title="@string/activity_drive_title"
-            android:visible="false"/>
-        <item
-            android:id="@+id/nav_suggest"
-            android:icon="@drawable/menu_sugg"
-            android:title="@string/activity_suggestions_title" />
+            android:title="@string/activity_diary_title" />
         <item
             android:id="@+id/nav_exit"
             android:icon="@drawable/menu_logout"
