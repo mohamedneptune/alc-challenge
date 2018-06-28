@@ -22,7 +22,8 @@ public class DiaryHelper {
     public DiaryHelper(Context context) {
     }
 
-    public void addTodo(String idTodo, String titleTodo, String categoryTodo, Date dateTodo, String descriptionTodo) {
+    public void addTodo(String idTodo, String titleTodo, String categoryTodo, Date dateTodo,
+                        String descriptionTodo) {
 
         DiaryModel diaryModel = new DiaryModel();
 
@@ -75,7 +76,8 @@ public class DiaryHelper {
         return diaryModel;
     }
 
-    public void updateTodo(String id, String titleTodo, String categoryTodo, Date dateTodo, String descriptionTodo) {
+    public void updateTodo(String id, String titleTodo, String categoryTodo, Date dateTodo,
+                           String descriptionTodo) {
         DiaryModel diaryModel = null;
         try {
             mRealm = Realm.getDefaultInstance();

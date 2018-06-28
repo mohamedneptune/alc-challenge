@@ -77,14 +77,16 @@ public class AuthenticationActivity extends AppCompatActivity {
         LoginUserName.setVisibility(View.GONE);
 
         // Creating and Configuring Google Sign In object.
-        GoogleSignInOptions googleSignInOptions = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+        GoogleSignInOptions googleSignInOptions = new GoogleSignInOptions
+                .Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
                 .requestEmail()
                 .build();
 
         // Creating and Configuring Google Api Client.
         googleApiClient = new GoogleApiClient.Builder(AuthenticationActivity.this)
-                .enableAutoManage(AuthenticationActivity.this , new GoogleApiClient.OnConnectionFailedListener() {
+                .enableAutoManage(AuthenticationActivity.this , new GoogleApiClient
+                        .OnConnectionFailedListener() {
                     @Override
                     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
 
@@ -147,9 +149,11 @@ public class AuthenticationActivity extends AppCompatActivity {
 
     public void FirebaseUserAuth(GoogleSignInAccount googleSignInAccount) {
 
-        AuthCredential authCredential = GoogleAuthProvider.getCredential(googleSignInAccount.getIdToken(), null);
+        AuthCredential authCredential = GoogleAuthProvider.getCredential(googleSignInAccount
+                .getIdToken(), null);
 
-        Toast.makeText(AuthenticationActivity.this,""+ authCredential.getProvider(),Toast.LENGTH_LONG).show();
+        Toast.makeText(AuthenticationActivity.this,""+ authCredential.getProvider(),
+                Toast.LENGTH_LONG).show();
 
         firebaseAuth.signInWithCredential(authCredential)
                 .addOnCompleteListener(AuthenticationActivity.this, new OnCompleteListener<AuthResult>() {
@@ -177,12 +181,14 @@ public class AuthenticationActivity extends AppCompatActivity {
                             // Setting up Email into TextView.
                             LoginUserEmail.setText("Email =  "+ firebaseUser.getEmail().toString());
 
-                            Intent intent = new Intent(AuthenticationActivity.this, MainActivity.class);
+                            Intent intent = new Intent(AuthenticationActivity.this,
+                                    MainActivity.class);
                             startActivity(intent);
                             //finish();
 
                         }else {
-                            Toast.makeText(AuthenticationActivity.this,"Something Went Wrong",Toast.LENGTH_LONG).show();
+                            Toast.makeText(AuthenticationActivity.this,
+                                    "Something Went Wrong",Toast.LENGTH_LONG).show();
                         }
                     }
                 });
@@ -201,7 +207,8 @@ public class AuthenticationActivity extends AppCompatActivity {
                         // Write down your any code here which you want to execute After Sign Out.
 
                         // Printing Logout toast message on screen.
-                        Toast.makeText(AuthenticationActivity.this, "Logout Successfully", Toast.LENGTH_LONG).show();
+                        Toast.makeText(AuthenticationActivity.this,
+                                "Logout Successfully", Toast.LENGTH_LONG).show();
 
                     }
                 });

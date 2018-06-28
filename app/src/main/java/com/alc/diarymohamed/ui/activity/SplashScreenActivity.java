@@ -30,7 +30,8 @@ public class SplashScreenActivity extends AppCompatActivity {
 
         //Show application in full screen
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_splash_screen);
 
@@ -38,7 +39,8 @@ public class SplashScreenActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                intent = new Intent(SplashScreenActivity.this, AuthenticationActivity.class);
+                intent = new Intent(SplashScreenActivity.this,
+                        AuthenticationActivity.class);
                 startActivity(intent);
                 finish();
             }

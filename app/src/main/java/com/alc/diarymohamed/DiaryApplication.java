@@ -34,10 +34,13 @@ public class DiaryApplication extends Application {
         Stetho.initialize(
                 Stetho.newInitializerBuilder(this)
                         .enableDumpapp(Stetho.defaultDumperPluginsProvider(this))
-                        .enableWebKitInspector(RealmInspectorModulesProvider.builder(this).build())
+                        .enableWebKitInspector(RealmInspectorModulesProvider
+                                .builder(this).build())
                         .build());
 
-        final RealmConfiguration configuration = new RealmConfiguration.Builder().name("default2.realm").schemaVersion(Config.SCHEMA_VERSION).migration(new RealmMigrations()).build();
+        final RealmConfiguration configuration = new RealmConfiguration.Builder()
+                .name("default2.realm").schemaVersion(Config.SCHEMA_VERSION)
+                .migration(new RealmMigrations()).build();
         Realm.setDefaultConfiguration(configuration);
         Realm.getInstance(configuration);
     }

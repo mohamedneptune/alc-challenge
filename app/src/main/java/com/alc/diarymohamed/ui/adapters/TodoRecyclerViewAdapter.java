@@ -47,9 +47,12 @@ public class TodoRecyclerViewAdapter extends RecyclerView.Adapter<TodoRecyclerVi
         mTodoArrayPendingRemoval = new ArrayList<>();
         mTodoArray = new ArrayList<>();
         mItemList = item_list;
-        mRobotoMediumTypeface = Typeface.createFromAsset(mContext.getAssets(), "fonts/" + "Roboto-Medium.ttf");
-        mRobotoBoldTypeface = Typeface.createFromAsset(mContext.getAssets(), "fonts/" + "Roboto-Bold.ttf");
-        mRobotoLightTypeface = Typeface.createFromAsset(mContext.getAssets(), "fonts/" + "Roboto-Light.ttf");
+        mRobotoMediumTypeface = Typeface.createFromAsset(mContext.getAssets(),
+                "fonts/" + "Roboto-Medium.ttf");
+        mRobotoBoldTypeface = Typeface.createFromAsset(mContext.getAssets(),
+                "fonts/" + "Roboto-Bold.ttf");
+        mRobotoLightTypeface = Typeface.createFromAsset(mContext.getAssets(),
+                "fonts/" + "Roboto-Light.ttf");
         currentDate = new Date(System.currentTimeMillis());
 
         mDiaryHelper = new DiaryHelper(mContext);
@@ -65,9 +68,6 @@ public class TodoRecyclerViewAdapter extends RecyclerView.Adapter<TodoRecyclerVi
         final TextView mMonthTextView;
         final TextView mYearTextView;
         final TextView mTodoTimeTextView;
-        final TextView mDurationHourTextView;
-        final TextView mUnitTexView;
-        final TextView mDurationMinuteTextView;
         final TextView mCategoryTextView;
         final LinearLayout mRootLayout;
         final CardView mCardViewRoot;
@@ -83,9 +83,6 @@ public class TodoRecyclerViewAdapter extends RecyclerView.Adapter<TodoRecyclerVi
             mMonthTextView = (TextView) itemView.findViewById(R.id.todo_month);
             mYearTextView = (TextView) itemView.findViewById(R.id.todo_year);
             mTodoTimeTextView = (TextView) itemView.findViewById(R.id.todo_time);
-            mDurationHourTextView = (TextView) itemView.findViewById(R.id.todo_duration_hour);
-            mUnitTexView = (TextView) itemView.findViewById(R.id.unit);
-            mDurationMinuteTextView = (TextView) itemView.findViewById(R.id.todo_duration_minute);
             mCategoryTextView = (TextView) itemView.findViewById(R.id.todo_category);
 
             mTitleTextView.setTypeface(mRobotoMediumTypeface);
@@ -98,7 +95,8 @@ public class TodoRecyclerViewAdapter extends RecyclerView.Adapter<TodoRecyclerVi
 
     @Override
     public Holder onCreateViewHolder(ViewGroup parent, int position) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(mItemList, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(mItemList, parent,
+                false);
         return new Holder(view);
     }
 
@@ -178,7 +176,8 @@ public class TodoRecyclerViewAdapter extends RecyclerView.Adapter<TodoRecyclerVi
     }
 
     public void saveLastIdTaskToSharedPreference(String id) {
-        SharedPreferences mSharedPreferences = mContext.getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+        SharedPreferences mSharedPreferences = mContext.getSharedPreferences(
+                "MyPrefs", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = mSharedPreferences.edit();
         editor.putString("last_id_task",id);
         editor.apply();

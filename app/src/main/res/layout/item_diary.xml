@@ -83,7 +83,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
-                            android:src="@drawable/time_black"
+                            android:src="@android:drawable/ic_dialog_alert"
                             tools:ignore="ContentDescription"/>
 
                         <TextView
@@ -91,40 +91,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="2dp"
-                            android:textColor="@color/colorGrayDark2"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/duration_layout"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.7">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:src="@drawable/timer"
-                            tools:ignore="ContentDescription"/>
-
-                        <TextView
-                            android:id="@+id/todo_duration_hour"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="3dp"
-                            android:textColor="@color/colorGrayDark2"/>
-
-                        <TextView
-                            android:id="@+id/unit"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/detail_hour_unit"
-                            android:textColor="@color/colorGrayDark2"/>
-
-                        <TextView
-                            android:id="@+id/todo_duration_minute"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
                             android:textColor="@color/colorGrayDark2"/>
                     </LinearLayout>
                 </LinearLayout>

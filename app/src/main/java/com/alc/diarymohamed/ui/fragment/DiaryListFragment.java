@@ -42,7 +42,8 @@ public class DiaryListFragment extends Fragment implements View.OnClickListener 
 
         mRecyclerView = (RecyclerView) mView.findViewById(R.id.recyclerView);
 
-        mRecyclerView.addOnItemTouchListener(new RecyclerTouchListner(getActivity(), mRecyclerView, new ClickListner() {
+        mRecyclerView.addOnItemTouchListener(new RecyclerTouchListner(getActivity(),
+                mRecyclerView, new ClickListner() {
             @Override
             public void onClick(View view, int position) {
             }
@@ -99,7 +100,8 @@ public class DiaryListFragment extends Fragment implements View.OnClickListener 
         mTodoArray = mDiaryHelper.findAllTodo();
 
         if (mTodoArray != null) {
-            RecyclerView.Adapter adapter = new TodoRecyclerViewAdapter(mContext, mTodoArray, R.layout.list_item_todo);
+            RecyclerView.Adapter adapter = new TodoRecyclerViewAdapter(mContext, mTodoArray,
+                    R.layout.item_diary);
             mRecyclerView.setAdapter(adapter);
         }
     }
@@ -110,7 +112,8 @@ public class DiaryListFragment extends Fragment implements View.OnClickListener 
     }
 
     public void saveLastIdTaskToSharedPreference(String id) {
-        SharedPreferences mSharedPreferences = getActivity().getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+        SharedPreferences mSharedPreferences = getActivity().getSharedPreferences("MyPrefs",
+                Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = mSharedPreferences.edit();
         editor.putString("last_id_task", id);
         editor.apply();

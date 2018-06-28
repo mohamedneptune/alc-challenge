@@ -15,7 +15,8 @@ public class RecyclerTouchListner implements RecyclerView.OnItemTouchListener{
     private final GestureDetector gestureDetector;
     private final DiaryListFragment.ClickListner clickListner;
 
-    public RecyclerTouchListner(Context context, final RecyclerView recyclerView, final DiaryListFragment.ClickListner clickListner){
+    public RecyclerTouchListner(Context context, final RecyclerView recyclerView,
+                                final DiaryListFragment.ClickListner clickListner){
         this.clickListner = clickListner;
         gestureDetector = new GestureDetector(context, new GestureDetector.SimpleOnGestureListener(){
 

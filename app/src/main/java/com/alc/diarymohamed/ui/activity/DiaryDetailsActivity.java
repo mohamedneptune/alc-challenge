@@ -66,7 +66,8 @@ public class DiaryDetailsActivity extends AppCompatActivity implements View.OnCl
 
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_todo_details);
 
@@ -78,8 +79,10 @@ public class DiaryDetailsActivity extends AppCompatActivity implements View.OnCl
         }
 
         Typeface robotoMediumTypeface, robotoRegularTypeface;
-        robotoMediumTypeface = Typeface.createFromAsset(getAssets(), "fonts/" + "Roboto-Medium.ttf");
-        robotoRegularTypeface = Typeface.createFromAsset(getAssets(), "fonts/" + "Roboto-Regular.ttf");
+        robotoMediumTypeface = Typeface.createFromAsset(getAssets(),
+                "fonts/" + "Roboto-Medium.ttf");
+        robotoRegularTypeface = Typeface.createFromAsset(getAssets(),
+                "fonts/" + "Roboto-Regular.ttf");
 
 
         mTitleEditText = (EditText) findViewById(R.id.title_value);
@@ -165,7 +168,8 @@ public class DiaryDetailsActivity extends AppCompatActivity implements View.OnCl
         mId = id;
 
         if (mDiaryModel != null) {
-            if (mDiaryModel.getTitleTodo().equals("") || mDiaryModel.getDescriptionTodo().equals("")) {
+            if (mDiaryModel.getTitleTodo().equals("") ||
+                    mDiaryModel.getDescriptionTodo().equals("")) {
                 mTitleEditText.setText(title_draft);
                 mDescriptionEditText.setText(desc_draft);
             } else {
@@ -238,7 +242,8 @@ public class DiaryDetailsActivity extends AppCompatActivity implements View.OnCl
     }
 
     public void saveLastIdTaskToSharedPreference(String id) {
-        SharedPreferences mSharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+        SharedPreferences mSharedPreferences = getSharedPreferences("MyPrefs",
+                Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = mSharedPreferences.edit();
         editor.putString("last_id_task", id);
         editor.apply();
@@ -254,7 +259,8 @@ public class DiaryDetailsActivity extends AppCompatActivity implements View.OnCl
 
             case R.id.menu_delete:
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setMessage(getResources().getString(R.string.todo_details_remove_alert)).setPositiveButton("Supprimer", new DialogInterface.OnClickListener() {
+                builder.setMessage(getResources().getString(R.string.todo_details_remove_alert)).setPositiveButton(
+                        "Supprimer", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         mDiaryHelper.removeTodo(mId);
                         finish();
