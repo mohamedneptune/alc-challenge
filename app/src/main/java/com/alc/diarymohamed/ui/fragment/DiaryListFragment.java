@@ -13,26 +13,24 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.alc.diarymohamed.R;
-import com.alc.diarymohamed.data.helper.TodoHelper;
-import com.alc.diarymohamed.data.model.TodoModel;
-import com.alc.diarymohamed.ui.activity.TodoDetailsActivity;
+import com.alc.diarymohamed.data.helper.DiaryHelper;
+import com.alc.diarymohamed.data.model.DiaryModel;
+import com.alc.diarymohamed.ui.activity.DiaryDetailsActivity;
 import com.alc.diarymohamed.ui.adapters.TodoRecyclerViewAdapter;
-import com.alc.diarymohamed.ui.common.OnUpdateListener;
 import com.alc.diarymohamed.ui.common.RecyclerTouchListner;
 
 import java.util.List;
 
-public class ToDoListFragment extends Fragment implements View.OnClickListener, OnUpdateListener {
+public class DiaryListFragment extends Fragment implements View.OnClickListener {
 
-    private static final String TAG = ToDoListFragment.class.getSimpleName();
+    private static final String TAG = DiaryListFragment.class.getSimpleName();
     private RecyclerView mRecyclerView;
     private Context mContext;
-    private List<TodoModel> mTodoArray;
-    private TodoHelper mTodoHelper;
-    private OnUpdateListener listener;
+    private List<DiaryModel> mTodoArray;
+    private DiaryHelper mDiaryHelper;
 
 
-    public ToDoListFragment() {
+    public DiaryListFragment() {
     }
 
     @Override
@@ -59,7 +57,7 @@ public class ToDoListFragment extends Fragment implements View.OnClickListener, 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), TodoDetailsActivity.class);
+                Intent intent = new Intent(getActivity(), DiaryDetailsActivity.class);
                 saveLastIdTaskToSharedPreference("");
                 intent.putExtra("id", "");
                 startActivity(intent);
@@ -83,10 +81,6 @@ public class ToDoListFragment extends Fragment implements View.OnClickListener, 
     public void onClick(View v) {
     }
 
-    @Override
-    public void onUpdate() {
-    }
-
     public interface ClickListner {
         void onClick(View view, int position);
 
@@ -101,16 +95,11 @@ public class ToDoListFragment extends Fragment implements View.OnClickListener, 
     }
 
     private void showTodo() {
-        listener = new OnUpdateListener() {
-            @Override
-            public void onUpdate() {
-            }
-        };
-        mTodoHelper = new TodoHelper(mContext);
-        mTodoArray = mTodoHelper.findAllTodo();
+        mDiaryHelper = new DiaryHelper(mContext);
+        mTodoArray = mDiaryHelper.findAllTodo();
 
         if (mTodoArray != null) {
-            RecyclerView.Adapter adapter = new TodoRecyclerViewAdapter(mContext, mTodoArray, R.layout.list_item_todo, listener);
+            RecyclerView.Adapter adapter = new TodoRecyclerViewAdapter(mContext, mTodoArray, R.layout.list_item_todo);
             mRecyclerView.setAdapter(adapter);
         }
     }

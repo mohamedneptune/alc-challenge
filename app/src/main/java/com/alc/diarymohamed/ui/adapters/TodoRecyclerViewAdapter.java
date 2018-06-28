@@ -15,12 +15,11 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.alc.diarymohamed.R;
-import com.alc.diarymohamed.data.helper.TodoHelper;
+import com.alc.diarymohamed.data.helper.DiaryHelper;
+import com.alc.diarymohamed.data.model.DiaryModel;
 import com.alc.diarymohamed.data.model.TimeModel;
-import com.alc.diarymohamed.data.model.TodoModel;
 import com.alc.diarymohamed.shared.Globals;
-import com.alc.diarymohamed.ui.activity.TodoDetailsActivity;
-import com.alc.diarymohamed.ui.common.OnUpdateListener;
+import com.alc.diarymohamed.ui.activity.DiaryDetailsActivity;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -32,18 +31,17 @@ public class TodoRecyclerViewAdapter extends RecyclerView.Adapter<TodoRecyclerVi
 
     private static final String TAG = TodoRecyclerViewAdapter.class.getSimpleName();
     private final Context mContext;
-    private final List<TodoModel> mTodoArray;
-    private final List<TodoModel> mTodoArrayPendingRemoval;
+    private final List<DiaryModel> mTodoArray;
+    private final List<DiaryModel> mTodoArrayPendingRemoval;
     private final int mItemList;
     private static Typeface mRobotoMediumTypeface, mRobotoBoldTypeface, mRobotoLightTypeface;
-    private final TodoHelper mTodoHelper;
+    private final DiaryHelper mDiaryHelper;
     private Date currentDate;
     private static final int PENDING_REMOVAL_TIMEOUT = 3000; // 3sec
     HashMap<String, Runnable> pendingRunnables = new HashMap<>(); // map of items to pending runnables, so we can cancel a removal if need be
-    private OnUpdateListener mListener;
 
 
-    public TodoRecyclerViewAdapter(Context context, List<TodoModel> todoArray, int item_list, OnUpdateListener listener) {
+    public TodoRecyclerViewAdapter(Context context, List<DiaryModel> todoArray, int item_list) {
         mContext = context;
 
         mTodoArrayPendingRemoval = new ArrayList<>();
@@ -54,8 +52,7 @@ public class TodoRecyclerViewAdapter extends RecyclerView.Adapter<TodoRecyclerVi
         mRobotoLightTypeface = Typeface.createFromAsset(mContext.getAssets(), "fonts/" + "Roboto-Light.ttf");
         currentDate = new Date(System.currentTimeMillis());
 
-        mTodoHelper = new TodoHelper(mContext);
-        mListener = listener;
+        mDiaryHelper = new DiaryHelper(mContext);
 
         mTodoArray.addAll(todoArray);
     }
@@ -107,10 +104,10 @@ public class TodoRecyclerViewAdapter extends RecyclerView.Adapter<TodoRecyclerVi
 
     @Override
     public void onBindViewHolder(Holder holder, final int position) {
-        final TodoModel todoModel = mTodoArray.get(position);
+        final DiaryModel diaryModel = mTodoArray.get(position);
         final int pos = position;
 
-        if (mTodoArrayPendingRemoval.contains(todoModel)) {
+        if (mTodoArrayPendingRemoval.contains(diaryModel)) {
             // we need to show the "undo" state of the row
             holder.itemView.setBackgroundColor(Color.BLUE);
             holder.mRootLayout.setVisibility(View.GONE);
@@ -118,11 +115,11 @@ public class TodoRecyclerViewAdapter extends RecyclerView.Adapter<TodoRecyclerVi
             holder.mRootLayout.setVisibility(View.VISIBLE);
 
 
-            holder.mTitleTextView.setText(todoModel.getTitleTodo());
+            holder.mTitleTextView.setText(diaryModel.getTitleTodo());
             try {
-                int year = todoModel.getDateTodo().getYear() + 1900;
-                int month = todoModel.getDateTodo().getMonth() + 1;
-                int day = todoModel.getDateTodo().getDate();
+                int year = diaryModel.getDateTodo().getYear() + 1900;
+                int month = diaryModel.getDateTodo().getMonth() + 1;
+                int day = diaryModel.getDateTodo().getDate();
                 holder.mDayTextView.setText("" + day);
                 holder.mMonthTextView.setText(Globals.getMonth(month));
                 holder.mYearTextView.setText("" + year);
@@ -130,12 +127,12 @@ public class TodoRecyclerViewAdapter extends RecyclerView.Adapter<TodoRecyclerVi
                 e.printStackTrace();
             }
 
-            int todoHour = todoModel.getTimeTodo() / 60;
-            int todoMinute = todoModel.getTimeTodo() % 60;
+            int todoHour = diaryModel.getTimeTodo() / 60;
+            int todoMinute = diaryModel.getTimeTodo() % 60;
             TimeModel timeModel = Globals.setTimeFormat(todoHour,todoMinute);
             holder.mTodoTimeTextView.setText(timeModel.getHour()+":"+timeModel.getMinute());
 
-            holder.mCategoryTextView.setText(todoModel.getCategoryTodo());
+            holder.mCategoryTextView.setText(diaryModel.getCategoryTodo());
         }
 
         holder.mRootLayout.setOnClickListener(this);
@@ -145,7 +142,7 @@ public class TodoRecyclerViewAdapter extends RecyclerView.Adapter<TodoRecyclerVi
             public void onClick(View view) {
                 try {
                     saveLastIdTaskToSharedPreference(mTodoArray.get(pos).getIdTodo());
-                    Intent intent = new Intent(mContext, TodoDetailsActivity.class);
+                    Intent intent = new Intent(mContext, DiaryDetailsActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     mContext.startActivity(intent);
                 } catch (Exception e) {
@@ -172,9 +169,9 @@ public class TodoRecyclerViewAdapter extends RecyclerView.Adapter<TodoRecyclerVi
     }
 
     public void remove(int position) {
-        TodoModel todoModel = mTodoArray.get(position);
-        if (mTodoArrayPendingRemoval.contains(todoModel)) {
-            mTodoArrayPendingRemoval.remove(todoModel);
+        DiaryModel diaryModel = mTodoArray.get(position);
+        if (mTodoArrayPendingRemoval.contains(diaryModel)) {
+            mTodoArrayPendingRemoval.remove(diaryModel);
         }
         notifyDataSetChanged();
         notifyItemRemoved(position);

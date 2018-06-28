@@ -39,7 +39,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ui.activity.AuthenticationActivity"></activity>
-        <activity android:name=".ui.activity.TodoDetailsActivity"
+        <activity android:name=".ui.activity.DiaryDetailsActivity"
             android:label=""
             android:screenOrientation="portrait"/>
     </application>

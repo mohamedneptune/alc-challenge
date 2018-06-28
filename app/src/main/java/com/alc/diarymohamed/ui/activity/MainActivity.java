@@ -18,7 +18,7 @@ import android.view.Window;
 
 import com.alc.diarymohamed.DiaryApplication;
 import com.alc.diarymohamed.R;
-import com.alc.diarymohamed.ui.fragment.ToDoListFragment;
+import com.alc.diarymohamed.ui.fragment.DiaryListFragment;
 
 /**
  * Created by mohamed on 26/06/18.
@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity
 
     private static final String TAG = MainActivity.class.getSimpleName();
 
-    private NavigationView navigation_view;
     private Context mContext;
     private Toolbar mToolBar;
     private DrawerLayout mDrawer;
@@ -54,7 +53,7 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        setFragment(0, ToDoListFragment.class);
+        setFragment(0, DiaryListFragment.class);
 
     }
 
@@ -87,7 +86,7 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-            setFragment(0, ToDoListFragment.class);
+            setFragment(0, DiaryListFragment.class);
         }
         else if (id == R.id.nav_exit) {
             finish();

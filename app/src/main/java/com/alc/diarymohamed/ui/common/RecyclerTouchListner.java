@@ -6,16 +6,16 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.alc.diarymohamed.ui.fragment.ToDoListFragment;
+import com.alc.diarymohamed.ui.fragment.DiaryListFragment;
 
 
 public class RecyclerTouchListner implements RecyclerView.OnItemTouchListener{
 
     private static final String TAG = RecyclerTouchListner.class.getSimpleName();
     private final GestureDetector gestureDetector;
-    private final ToDoListFragment.ClickListner clickListner;
+    private final DiaryListFragment.ClickListner clickListner;
 
-    public RecyclerTouchListner(Context context, final RecyclerView recyclerView, final ToDoListFragment.ClickListner clickListner){
+    public RecyclerTouchListner(Context context, final RecyclerView recyclerView, final DiaryListFragment.ClickListner clickListner){
         this.clickListner = clickListner;
         gestureDetector = new GestureDetector(context, new GestureDetector.SimpleOnGestureListener(){
 

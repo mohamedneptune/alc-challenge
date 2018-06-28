@@ -11,48 +11,12 @@
 
     <string name="detail_hour_unit">:</string>
 
-    <!--Contacts-->
-    <string name="activity_contacts_list_title">Contacts</string>
-    <string name="favorie_contacts_title">Favorite</string>
-    <string name="last_contacts_title">Last</string>
-    <string name="all_contacts_title">Contacts</string>
-
-    <string name="title_activity_splash_screen">SplashScreenActivity</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
-
-    <!--Country-->
-    <string name="activity_country_list_title">Countries</string>
-    <string name="activity_country_details_title">Country details</string>
-    <string name="activity_country_edit_title">Edit details</string>
-    <string name="activity_country_add_title">Add new country</string>
-    <string name="add_country_country_label">Country :</string>
-    <string name="add_country_prefix_label">Prefix :</string>
-    <string name="add_country_currency_label">Currency :</string>
-    <string name="add_country_capital_label">Capital :</string>
-    <string name="add_country_time_zone_label">Time zone :</string>
-    <string name="add_country_time_local_label">Local hour :</string>
-    <string name="btn_send">Send</string>
-    <string name="btn_select">Select</string>
-    <string name="email_title_country_proposition">Country Prefix proposition</string>
-    <string name="email_title_country_modification">Country Prefix modification</string>
-    <string name="email_title_send_to_admin">Send Email to admin</string>
-    <string name="prefix_copied">Copied</string>
-    <string name="country_edit">Edit</string>
-    <string name="country_search">search</string>
-
-    <!--Drive-->
-    <string name="activity_drive_title">Driving mode</string>
-    <string name="activity_drive_message">Message: </string>
-    <string name="btn_save">Save</string>
-
-    <!--Suggestions-->
-    <string name="activity_suggestions_title">Suggestions</string>
+    <string name="activity_details_title">Details</string>
 
     <!--Exit-->
     <string name="activity_exit">Exit</string>
 
-    <string name="todo_details_remove_alert">Voulez-vous vraiment supprimer la tâche ? Cette opération est irréversible.</string>
+    <string name="todo_details_remove_alert">Are you sure to delete this ?</string>
 
 
 </resources>

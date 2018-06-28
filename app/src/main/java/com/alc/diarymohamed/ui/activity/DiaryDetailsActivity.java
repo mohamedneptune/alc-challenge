@@ -5,9 +5,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Rect;
 import android.graphics.Typeface;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -19,18 +17,14 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.alc.diarymohamed.R;
-import com.alc.diarymohamed.data.helper.TodoHelper;
+import com.alc.diarymohamed.data.helper.DiaryHelper;
+import com.alc.diarymohamed.data.model.DiaryModel;
 import com.alc.diarymohamed.data.model.TimeModel;
-import com.alc.diarymohamed.data.model.TodoModel;
 import com.alc.diarymohamed.shared.Constants;
 import com.alc.diarymohamed.shared.Globals;
 
@@ -39,10 +33,10 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.UUID;
 
-public class TodoDetailsActivity extends AppCompatActivity implements View.OnClickListener,
+public class DiaryDetailsActivity extends AppCompatActivity implements View.OnClickListener,
         AdapterView.OnItemSelectedListener {
 
-    private static final String TAG = TodoDetailsActivity.class.getSimpleName();
+    private static final String TAG = DiaryDetailsActivity.class.getSimpleName();
     private int mYear, mMonth, mDay;
     private TextView mDateTextView, mHourTextView, mMinuteTextView;
     private Spinner mCategorySpinner;
@@ -50,8 +44,8 @@ public class TodoDetailsActivity extends AppCompatActivity implements View.OnCli
     private String mId, mCategory;
 
     private EditText mTitleEditText, mDescriptionEditText;
-    private TodoHelper mTodoHelper;
-    private TodoModel mTodoModel;
+    private DiaryHelper mDiaryHelper;
+    private DiaryModel mDiaryModel;
     private int mSelectedCategoryPosition;
     private TimePickerDialog mTimePickerDialog;
     private Calendar mCalendar;
@@ -125,8 +119,10 @@ public class TodoDetailsActivity extends AppCompatActivity implements View.OnCli
         adapterCategory.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mCategorySpinner.setAdapter(adapterCategory);
 
+        setTitle(getResources().getString(R.string.activity_details_title));
 
-        mTodoHelper = new TodoHelper(mContext);
+
+        mDiaryHelper = new DiaryHelper(mContext);
     }
 
 
@@ -164,24 +160,24 @@ public class TodoDetailsActivity extends AppCompatActivity implements View.OnCli
     }
 
     private void loadData(String id) {
-        mTodoModel = mTodoHelper.findTodo(id);
+        mDiaryModel = mDiaryHelper.findTodo(id);
 
         mId = id;
 
-        if (mTodoModel != null) {
-            if (mTodoModel.getTitleTodo().equals("") || mTodoModel.getDescriptionTodo().equals("")) {
+        if (mDiaryModel != null) {
+            if (mDiaryModel.getTitleTodo().equals("") || mDiaryModel.getDescriptionTodo().equals("")) {
                 mTitleEditText.setText(title_draft);
                 mDescriptionEditText.setText(desc_draft);
             } else {
-                mTitleEditText.setText(mTodoModel.getTitleTodo());
-                mDescriptionEditText.setText(mTodoModel.getDescriptionTodo());
+                mTitleEditText.setText(mDiaryModel.getTitleTodo());
+                mDescriptionEditText.setText(mDiaryModel.getDescriptionTodo());
             }
         }
 
         try {
-            mYear = mTodoModel.getDateTodo().getYear() + 1900;
-            mMonth = mTodoModel.getDateTodo().getMonth() + 1;
-            mDay = mTodoModel.getDateTodo().getDate();
+            mYear = mDiaryModel.getDateTodo().getYear() + 1900;
+            mMonth = mDiaryModel.getDateTodo().getMonth() + 1;
+            mDay = mDiaryModel.getDateTodo().getDate();
             String month = Globals.getMonth(mMonth);
             mDateTextView.setText(mDay + " " + month + " " + mYear);
         } catch (Exception e) {
@@ -189,14 +185,14 @@ public class TodoDetailsActivity extends AppCompatActivity implements View.OnCli
         }
 
         //Task time
-        int hourTask = mTodoModel.getTimeTodo() / 60;
-        int minuteTask = mTodoModel.getTimeTodo() % 60;
+        int hourTask = mDiaryModel.getTimeTodo() / 60;
+        int minuteTask = mDiaryModel.getTimeTodo() % 60;
         TimeModel timeTask = Globals.setTimeFormat(hourTask, minuteTask);
         mHourTextView.setText(timeTask.getHour());
         mMinuteTextView.setText(timeTask.getMinute());
 
         for (int i = 0; i < mListCategory.size(); i++) {
-            if (mTodoModel.getCategoryTodo().equals(mListCategory.get(i))) {
+            if (mDiaryModel.getCategoryTodo().equals(mListCategory.get(i))) {
                 mSelectedCategoryPosition = i;
             }
         }
@@ -212,11 +208,11 @@ public class TodoDetailsActivity extends AppCompatActivity implements View.OnCli
             if ("".equals(mId)) {
                 mId = UUID.randomUUID().toString();
                 saveLastIdTaskToSharedPreference(mId);
-                mTodoHelper.addTodo(mId, title, mCategory, null, description);
+                mDiaryHelper.addTodo(mId, title, mCategory, null, description);
             } else {
                 saveLastIdTaskToSharedPreference(mId);
-                Date toDoDate = mTodoModel.getDateTodo();
-                mTodoHelper.updateTodo(mId, title, mCategory, toDoDate, description);
+                Date toDoDate = mDiaryModel.getDateTodo();
+                mDiaryHelper.updateTodo(mId, title, mCategory, toDoDate, description);
 
             }
         } catch (Exception e) {
@@ -232,7 +228,7 @@ public class TodoDetailsActivity extends AppCompatActivity implements View.OnCli
             if ("".equals(mId)) {
                 mId = UUID.randomUUID().toString();
                 saveLastIdTaskToSharedPreference(mId);
-                mTodoHelper.addTodo(mId, title, mCategory, date, description);
+                mDiaryHelper.addTodo(mId, title, mCategory, date, description);
             } else {
                 saveLastIdTaskToSharedPreference(mId);
             }
@@ -260,7 +256,7 @@ public class TodoDetailsActivity extends AppCompatActivity implements View.OnCli
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
                 builder.setMessage(getResources().getString(R.string.todo_details_remove_alert)).setPositiveButton("Supprimer", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        mTodoHelper.removeTodo(mId);
+                        mDiaryHelper.removeTodo(mId);
                         finish();
                     }
                 }).setNegativeButton("Annuler", null);
@@ -338,7 +334,7 @@ public class TodoDetailsActivity extends AppCompatActivity implements View.OnCli
         menuItemDelete = menu.getItem(0);
         menuItemSave = menu.getItem(1);
 
-        if (null == mTodoModel) {
+        if (null == mDiaryModel) {
             menuItemDelete.setVisible(false);
         }
         return super.onPrepareOptionsMenu(menu);
