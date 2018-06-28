@@ -9,6 +9,8 @@
     <!-- Home -->
     <string name="activity_diary_title">Diary</string>
 
+    <string name="detail_hour_unit">:</string>
+
     <!--Contacts-->
     <string name="activity_contacts_list_title">Contacts</string>
     <string name="favorie_contacts_title">Favorite</string>
@@ -49,6 +51,8 @@
 
     <!--Exit-->
     <string name="activity_exit">Exit</string>
+
+    <string name="todo_details_remove_alert">Voulez-vous vraiment supprimer la tâche ? Cette opération est irréversible.</string>
 
 
 </resources>

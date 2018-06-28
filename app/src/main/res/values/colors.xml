@@ -1,21 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#c565d3</color>
-    <color name="colorPrimaryDark">#af5bbb</color>
-    <!--<color name="colorAccent">#FF4081</color>-->
-    <color name="colorAccent">#FFF</color>
+
 
     <color name="white">#FFF</color>
     <color name="gray">#ededed</color>
     <color name="gray_dark">#787878</color>
-    <color name="colorGrayWhite">#ffadbd</color>
-    <color name="colorListBackground">#f5f5f5</color>
 
     <color name="divider">#BDBDBD</color>
     <color name="scrollbar">#1976D2</color>
 
-    <color name="black">#000</color>
-
     <color name="black_overlay">#66000000</color>
     <color name="transparent">#00FFFFFF</color>
+
+    <color name="colorPrimary">#ff3366</color>
+    <color name="colorPrimaryDark">#eb1c50</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- doneList -->
+    <color name="colorGray">#bcc0c1</color>
+    <color name="colorGrayDark">#ff366b</color>
+    <color name="colorGrayDark1">#202334</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorListBackground">#f5f5f5</color>
+    <!-- todoList -->
+    <color name="colorGrayWhite">#ffadbd</color>
+    <color name="colorGrayDark2">#374955</color>
+    <color name="colorRed">#f00a00</color>
+    <color name="colorOrange">#f9c41e</color>
+    <color name="colorOrange1">#f7c120</color>
+    <color name="colorGreen">#1caf00</color>
+
+    <color name="colorTransparent">#00000000</color>
+    <!--edit_calendar-->
+    <color name="blue">#08d9d6</color>
+    <color name="black">#38464f</color>
+    <color name="grey">#262a35</color>
+    <color name="orangeCerle">#eaeaea</color>
+    <color name="caldroidblack">#37464d</color>
 </resources>

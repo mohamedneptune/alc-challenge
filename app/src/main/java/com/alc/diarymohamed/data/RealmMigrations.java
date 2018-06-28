@@ -7,7 +7,7 @@ import io.realm.RealmMigration;
 import io.realm.RealmSchema;
 
 /**
- * Created by mohamed on 17/02/18.
+ * Created by mohamed on 28/06/18.
  */
 
 public class RealmMigrations implements RealmMigration {

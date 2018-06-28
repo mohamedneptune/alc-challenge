@@ -8,15 +8,7 @@
                 android:paddingBottom="5dp"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="5dp"
-                tools:context="com.student.android.ui.activity.TodoDetailsActivity">
-
-   <!-- <ScrollView
-        android:id="@+id/todo_scroll"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="10dp"
-        android:background="#f5f5f5">-->
+                android:paddingTop="5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -62,6 +54,54 @@
                     android:maxLines="2"/>
             </android.support.v7.widget.CardView>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/date_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:onClick="setTaskDate"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/hour_text_view"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:text="00"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/todo_time_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/detail_hour_unit"
+                    android:layout_marginTop="2dp"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/minute_text_view"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:text="00"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
             <android.support.v7.widget.CardView
                 android:id="@+id/category_card"
                 android:layout_width="match_parent"
@@ -78,35 +118,7 @@
 
             </android.support.v7.widget.CardView>
 
-
-            <!-- Date -->
-            <include
-                layout="@layout/content_todo_details_date"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="6dp"
-              />
-
-
-            <!-- Priority seekBar -->
-            <include
-                layout="@layout/content_todo_details_seekbar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"/>
-
-            <!-- Preparation -->
-            <include
-                layout="@layout/content_todo_details_preparation"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
-             />
-
-
         </LinearLayout>
-
-   <!-- </ScrollView>-->
 
 
 </RelativeLayout>
