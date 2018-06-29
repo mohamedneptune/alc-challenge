@@ -13,6 +13,10 @@ import com.alc.diarymohamed.shared.Config;
 import com.alc.diarymohamed.shared.Globals;
 
 
+/**
+ * Created by mohamed on 25/06/18.
+ */
+
 public class SplashScreenActivity extends AppCompatActivity {
 
     private static final String TAG = SplashScreenActivity.class.getSimpleName();

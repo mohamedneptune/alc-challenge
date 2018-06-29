@@ -1,10 +1,10 @@
 package com.alc.diarymohamed.shared;
 
-import com.alc.diarymohamed.R;
-
 /**
- * Created by Mohamed on 28/06/2018.
+ * Created by mohamed on 25/06/18.
  */
+
+
 public class Constants {
 
     private Constants() {

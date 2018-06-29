@@ -29,6 +29,10 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 
+/**
+ * Created by mohamed on 26/06/18.
+ */
+
 
 public class AuthenticationActivity extends AppCompatActivity {
 

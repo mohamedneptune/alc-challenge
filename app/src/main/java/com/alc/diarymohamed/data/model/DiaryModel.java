@@ -5,6 +5,9 @@ import java.util.Date;
 import io.realm.RealmObject;
 import io.realm.annotations.RealmClass;
 
+/**
+ * Created by mohamed on 25/06/18.
+ */
 
 @RealmClass
 public class DiaryModel extends RealmObject {

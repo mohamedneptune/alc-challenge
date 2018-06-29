@@ -21,6 +21,12 @@ import com.alc.diarymohamed.ui.common.RecyclerTouchListner;
 
 import java.util.List;
 
+
+/**
+ * Created by mohamed on 27/06/18.
+ */
+
+
 public class DiaryListFragment extends Fragment implements View.OnClickListener {
 
     private static final String TAG = DiaryListFragment.class.getSimpleName();

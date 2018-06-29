@@ -26,6 +26,11 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
+/**
+ * Created by mohamed on 27/06/18.
+ */
+
+
 public class DiaryRecyclerViewAdapter extends RecyclerView.Adapter<DiaryRecyclerViewAdapter.Holder>
         implements View.OnClickListener, View.OnLongClickListener {
 

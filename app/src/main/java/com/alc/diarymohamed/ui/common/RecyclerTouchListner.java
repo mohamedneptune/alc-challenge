@@ -8,6 +8,9 @@ import android.view.View;
 
 import com.alc.diarymohamed.ui.fragment.DiaryListFragment;
 
+/**
+ * Created by mohamed on 28/06/18.
+ */
 
 public class RecyclerTouchListner implements RecyclerView.OnItemTouchListener{
 

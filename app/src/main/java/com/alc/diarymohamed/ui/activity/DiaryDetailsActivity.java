@@ -32,6 +32,12 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.UUID;
 
+
+/**
+ * Created by mohamed on 28/06/18.
+ */
+
+
 public class DiaryDetailsActivity extends AppCompatActivity implements View.OnClickListener,
         AdapterView.OnItemSelectedListener {
 

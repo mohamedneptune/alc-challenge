@@ -12,6 +12,10 @@ import com.uphyca.stetho_realm.RealmInspectorModulesProvider;
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
 
+/**
+ * Created by mohamed on 26/06/18.
+ */
+
 
 public class DiaryApplication extends Application {
 

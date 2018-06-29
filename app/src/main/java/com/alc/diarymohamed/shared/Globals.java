@@ -4,6 +4,12 @@ import android.content.Context;
 
 import com.alc.diarymohamed.data.model.TimeModel;
 
+
+/**
+ * Created by mohamed on 25/06/18.
+ */
+
+
 public class Globals {
 
     private static Context applicationContext;
@@ -51,18 +57,18 @@ public class Globals {
     public static String getMonth(int intMonth){
 
         switch (intMonth){
-            case 1: return "Janvier";
-            case 2: return "Février";
-            case 3: return "Mars";
-            case 4: return "Avril";
-            case 5: return "Mai";
-            case 6: return "Juin";
-            case 7: return "Juillet";
-            case 8: return "Août";
-            case 9: return "Septembre";
-            case 10: return "Octobre";
-            case 11: return "Novembre";
-            case 12: return "Décembre";
+            case 1: return "January";
+            case 2: return "February";
+            case 3: return "March";
+            case 4: return "April ";
+            case 5: return "May";
+            case 6: return "June";
+            case 7: return "July";
+            case 8: return "August";
+            case 9: return "September";
+            case 10: return "October";
+            case 11: return "November";
+            case 12: return "December";
             default:return "";
         }
     }

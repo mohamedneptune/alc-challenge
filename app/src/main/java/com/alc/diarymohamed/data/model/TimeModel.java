@@ -1,5 +1,11 @@
 package com.alc.diarymohamed.data.model;
 
+
+/**
+ * Created by mohamed on 25/06/18.
+ */
+
+
 public class TimeModel {
 
 
