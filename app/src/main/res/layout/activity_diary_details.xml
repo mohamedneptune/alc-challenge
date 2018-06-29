@@ -83,7 +83,7 @@
                     android:textSize="12sp" />
 
                 <TextView
-                    android:id="@+id/todo_time_unit"
+                    android:id="@+id/diary_time_unit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"

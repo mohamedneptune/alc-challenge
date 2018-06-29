@@ -16,7 +16,7 @@ import com.alc.diarymohamed.R;
 import com.alc.diarymohamed.data.helper.DiaryHelper;
 import com.alc.diarymohamed.data.model.DiaryModel;
 import com.alc.diarymohamed.ui.activity.DiaryDetailsActivity;
-import com.alc.diarymohamed.ui.adapters.TodoRecyclerViewAdapter;
+import com.alc.diarymohamed.ui.adapters.DiaryRecyclerViewAdapter;
 import com.alc.diarymohamed.ui.common.RecyclerTouchListner;
 
 import java.util.List;
@@ -26,7 +26,7 @@ public class DiaryListFragment extends Fragment implements View.OnClickListener 
     private static final String TAG = DiaryListFragment.class.getSimpleName();
     private RecyclerView mRecyclerView;
     private Context mContext;
-    private List<DiaryModel> mTodoArray;
+    private List<DiaryModel> mDiaryArray;
     private DiaryHelper mDiaryHelper;
 
 
@@ -38,7 +38,7 @@ public class DiaryListFragment extends Fragment implements View.OnClickListener 
 
         mContext = getActivity().getApplicationContext();
 
-        View mView = inflater.inflate(R.layout.fragment_todo_list, container, false);
+        View mView = inflater.inflate(R.layout.fragment_diary_list, container, false);
 
         mRecyclerView = (RecyclerView) mView.findViewById(R.id.recyclerView);
 
@@ -92,15 +92,15 @@ public class DiaryListFragment extends Fragment implements View.OnClickListener 
     public void onResume() {
         super.onResume();
 
-        showTodo();
+        showDiary();
     }
 
-    private void showTodo() {
+    private void showDiary() {
         mDiaryHelper = new DiaryHelper(mContext);
-        mTodoArray = mDiaryHelper.findAllTodo();
+        mDiaryArray = mDiaryHelper.findAllDiary();
 
-        if (mTodoArray != null) {
-            RecyclerView.Adapter adapter = new TodoRecyclerViewAdapter(mContext, mTodoArray,
+        if (mDiaryArray != null) {
+            RecyclerView.Adapter adapter = new DiaryRecyclerViewAdapter(mContext, mDiaryArray,
                     R.layout.item_diary);
             mRecyclerView.setAdapter(adapter);
         }

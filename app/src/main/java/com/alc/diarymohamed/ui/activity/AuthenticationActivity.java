@@ -9,7 +9,6 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.alc.diarymohamed.R;
@@ -51,9 +50,6 @@ public class AuthenticationActivity extends AppCompatActivity {
     // Google Sign In button .
     com.google.android.gms.common.SignInButton signInButton;
 
-    // TextView to Show Login User Email and Name.
-    TextView  LoginUserEmail;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,15 +61,10 @@ public class AuthenticationActivity extends AppCompatActivity {
 
         SignOutButton= (Button) findViewById(R.id.sign_out);
 
-        LoginUserEmail = (TextView) findViewById(R.id.textViewEmail);
-
         signInButton = (com.google.android.gms.common.SignInButton)findViewById(R.id.sign_in_button);
 
         // Getting Firebase Auth Instance into firebaseAuth object.
         firebaseAuth = FirebaseAuth.getInstance();
-
-        // Hiding the TextView on activity start up time.
-        LoginUserEmail.setVisibility(View.GONE);
 
         // Creating and Configuring Google Sign In object.
         GoogleSignInOptions googleSignInOptions = new GoogleSignInOptions
@@ -169,12 +160,6 @@ public class AuthenticationActivity extends AppCompatActivity {
                             // Hiding Login in button.
                             signInButton.setVisibility(View.GONE);
 
-                            // Showing the TextView.
-                            LoginUserEmail.setVisibility(View.VISIBLE);
-
-                            // Setting up Email into TextView.
-                            LoginUserEmail.setText(firebaseUser.getEmail().toString());
-
                             SharedPreferences mSharedPreferences = getSharedPreferences("MyPrefs",
                                     Context.MODE_PRIVATE);
                             SharedPreferences.Editor editor = mSharedPreferences.edit();
@@ -214,9 +199,6 @@ public class AuthenticationActivity extends AppCompatActivity {
 
         // After logout Hiding sign out button.
         SignOutButton.setVisibility(View.GONE);
-
-        // After logout setting up email to null.
-        LoginUserEmail.setText(null);
 
         // After logout setting up login button visibility to visible.
         signInButton.setVisibility(View.VISIBLE);

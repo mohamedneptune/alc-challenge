@@ -22,8 +22,8 @@ public class DiaryHelper {
     public DiaryHelper(Context context) {
     }
 
-    public void addTodo(String idTodo, String titleTodo, String categoryTodo, Date dateTodo,
-                        String descriptionTodo) {
+    public void addDiary(String idDiary, String titleDiary, String categoryDiary, Date dateDiary,
+                        int timeDiary, String descriptionDiary) {
 
         DiaryModel diaryModel = new DiaryModel();
 
@@ -31,11 +31,12 @@ public class DiaryHelper {
             mRealm = Realm.getDefaultInstance();
             mRealm.beginTransaction();
             diaryModel = mRealm.createObject(DiaryModel.class);
-            diaryModel.setIdTodo(idTodo);
-            diaryModel.setTitleTodo(titleTodo);
-            diaryModel.setCategoryTodo(categoryTodo);
-            diaryModel.setDateTodo(dateTodo);
-            diaryModel.setDescriptionTodo(descriptionTodo);
+            diaryModel.setIdDiary(idDiary);
+            diaryModel.setTitleDiary(titleDiary);
+            diaryModel.setCategoryDiary(categoryDiary);
+            diaryModel.setDateDiary(dateDiary);
+            diaryModel.setTimeDiary(timeDiary);
+            diaryModel.setDescriptionDiary(descriptionDiary);
 
         } catch (Exception e) {
             mRealm.cancelTransaction();
@@ -47,20 +48,20 @@ public class DiaryHelper {
     }
 
 
-    public RealmResults<DiaryModel> findAllTodo() {
+    public RealmResults<DiaryModel> findAllDiary() {
         mRealm = Realm.getDefaultInstance();
         RealmQuery<DiaryModel> query = mRealm.where(DiaryModel.class);
         RealmResults<DiaryModel> diaryModels = query.findAll();
         return diaryModels;
     }
 
-    public DiaryModel findTodo(String idTodo) {
+    public DiaryModel findDiary(String idDiary) {
         DiaryModel diaryModel = null;
         try {
             mRealm = Realm.getDefaultInstance();
             mRealm.beginTransaction();
             diaryModel = mRealm.where(DiaryModel.class)
-                    .equalTo("idTodo", idTodo)
+                    .equalTo("idDiary", idDiary)
                     .findFirst();
         } catch (Exception e) {
             mRealm.cancelTransaction();
@@ -69,21 +70,21 @@ public class DiaryHelper {
             if (diaryModel == null) {
                 Log.i(TAG,"diaryModel.find returns null");
             } else {
-                Log.i(TAG,"diaryModel.find returns " + diaryModel.getTitleTodo());
+                Log.i(TAG,"diaryModel.find returns " + diaryModel.getTitleDiary());
             }
             //realm.close();
         }
         return diaryModel;
     }
 
-    public void updateTodo(String id, String titleTodo, String categoryTodo, Date dateTodo,
-                           String descriptionTodo) {
+    public void updateDiary(String id, String titleDiary, String categoryDiary, Date dateDiary,
+                           int timeDiary, String descriptionDiary) {
         DiaryModel diaryModel = null;
         try {
             mRealm = Realm.getDefaultInstance();
             mRealm.beginTransaction();
             diaryModel = mRealm.where(DiaryModel.class)
-                    .equalTo("idTodo", id)
+                    .equalTo("idDiary", id)
                     .findFirst();
         } catch (Exception e) {
             mRealm.cancelTransaction();
@@ -94,11 +95,12 @@ public class DiaryHelper {
             } else {
                 try {
                     mRealm.beginTransaction();
-                    diaryModel.setIdTodo(id);
-                    diaryModel.setTitleTodo(titleTodo);
-                    diaryModel.setCategoryTodo(categoryTodo);
-                    diaryModel.setDateTodo(dateTodo);
-                    diaryModel.setDescriptionTodo(descriptionTodo);
+                    diaryModel.setIdDiary(id);
+                    diaryModel.setTitleDiary(titleDiary);
+                    diaryModel.setCategoryDiary(categoryDiary);
+                    diaryModel.setDateDiary(dateDiary);
+                    diaryModel.setTimeDiary(timeDiary);
+                    diaryModel.setDescriptionDiary(descriptionDiary);
                     mRealm.commitTransaction();
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -107,13 +109,13 @@ public class DiaryHelper {
         }
     }
 
-    public void removeTodo(String idTodo) {
+    public void removeDiary(String idDiary) {
         DiaryModel diaryModel = null;
         try {
             mRealm = Realm.getDefaultInstance();
             mRealm.beginTransaction();
             diaryModel = mRealm.where(DiaryModel.class)
-                    .equalTo("idTodo", idTodo)
+                    .equalTo("idDiary", idDiary)
                     .findFirst();
         } catch (Exception e) {
             mRealm.cancelTransaction();
@@ -122,7 +124,7 @@ public class DiaryHelper {
             if (diaryModel == null) {
                 Log.i(TAG,"diaryModel.find returns null");
             } else {
-                Log.i(TAG,"diaryModel.find returns " + diaryModel.getTitleTodo());
+                Log.i(TAG,"diaryModel.find returns " + diaryModel.getTitleDiary());
                 mRealm.beginTransaction();
                 diaryModel.deleteFromRealm();
                 mRealm.commitTransaction();

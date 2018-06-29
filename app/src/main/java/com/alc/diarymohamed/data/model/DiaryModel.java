@@ -10,60 +10,59 @@ import io.realm.annotations.RealmClass;
 public class DiaryModel extends RealmObject {
 
 
-    private String idTodo;
-    private String titleTodo;
-    private String categoryTodo;
-    private Date dateTodo;
-    private int timeTodo;
-    private String descriptionTodo;
+    private String idDiary;
+    private String titleDiary;
+    private String categoryDiary;
+    private Date dateDiary;
+    private int timeDiary;
+    private String descriptionDiary;
 
 
-    public String getIdTodo() {
-        return idTodo;
+    public String getIdDiary() {
+        return idDiary;
     }
 
-    public void setIdTodo(String idTodo) {
-        this.idTodo = idTodo;
+    public void setIdDiary(String idDiary) {
+        this.idDiary = idDiary;
     }
 
-    public String getTitleTodo() {
-        return titleTodo;
+    public String getTitleDiary() {
+        return titleDiary;
     }
 
-    public void setTitleTodo(String titleTodo) {
-        this.titleTodo = titleTodo;
+    public void setTitleDiary(String titleDiary) {
+        this.titleDiary = titleDiary;
     }
 
-    public String getCategoryTodo() {
-        return categoryTodo;
+    public String getCategoryDiary() {
+        return categoryDiary;
     }
 
-    public void setCategoryTodo(String categoryTodo) {
-        this.categoryTodo = categoryTodo;
+    public void setCategoryDiary(String categoryDiary) {
+        this.categoryDiary = categoryDiary;
     }
 
-    public Date getDateTodo() {
-        return dateTodo;
+    public Date getDateDiary() {
+        return dateDiary;
     }
 
-    public void setDateTodo(Date dateTodo) {
-        this.dateTodo = dateTodo;
+    public void setDateDiary(Date dateDiary) {
+        this.dateDiary = dateDiary;
     }
 
-    public int getTimeTodo() {
-        return timeTodo;
+    public int getTimeDiary() {
+        return timeDiary;
     }
 
-    public void setTimeTodo(int timeTodo) {
-        this.timeTodo = timeTodo;
+    public void setTimeDiary(int timeDiary) {
+        this.timeDiary = timeDiary;
     }
 
-
-    public String getDescriptionTodo() {
-        return descriptionTodo;
+    public String getDescriptionDiary() {
+        return descriptionDiary;
     }
 
-    public void setDescriptionTodo(String descriptionTodo) {
-        this.descriptionTodo = descriptionTodo;
+    public void setDescriptionDiary(String descriptionDiary) {
+        this.descriptionDiary = descriptionDiary;
     }
 }

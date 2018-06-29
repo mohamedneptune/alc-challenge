@@ -26,27 +26,34 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/todo_day"
+                    android:id="@+id/diary_day"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:textSize="12sp"/>
 
                 <TextView
-                    android:id="@+id/todo_month"
+                    android:id="@+id/diary_month"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:textSize="12sp"/>
 
                 <TextView
-                    android:id="@+id/todo_year"
+                    android:id="@+id/diary_year"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:textSize="11sp"/>
 
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorGray"/>
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -57,14 +64,15 @@
 
 
                 <TextView
-                    android:id="@+id/todo_title"
+                    android:id="@+id/diary_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:text="Lorammmmmmmmmmmmmm"
+                    tools:text="Title"
                     android:textColor="@color/colorGrayDark2"
-                    android:textSize="13sp"
+                    android:textSize="14sp"
                     android:textStyle="italic"/>
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -83,18 +91,19 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
-                            android:src="@android:drawable/ic_dialog_alert"
+                            android:src="@drawable/time_black"
                             tools:ignore="ContentDescription"/>
 
                         <TextView
-                            android:id="@+id/todo_time"
+                            android:id="@+id/diary_time"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="2dp"
                             android:textColor="@color/colorGrayDark2"/>
                     </LinearLayout>
-                </LinearLayout>
 
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -114,24 +123,18 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
+                            android:src="@drawable/categorie"
                             tools:ignore="ContentDescription"/>
 
                         <TextView
-                            android:id="@+id/todo_category"
+                            android:id="@+id/diary_category"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
-                            android:text="Ecole"
+                            tools:text="category"
                             android:textColor="@color/colorGrayDark2"
                             android:textSize="12sp"/>
                     </LinearLayout>
-
-                    <ImageView
-                        android:id="@+id/prepa_icon"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="20dp"
-                        tools:ignore="ContentDescription"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

@@ -1,6 +1,5 @@
 package com.alc.diarymohamed.ui.activity;
 
-import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -37,7 +36,7 @@ public class DiaryDetailsActivity extends AppCompatActivity implements View.OnCl
         AdapterView.OnItemSelectedListener {
 
     private static final String TAG = DiaryDetailsActivity.class.getSimpleName();
-    private int mYear, mMonth, mDay;
+    private int mYear, mMonth, mDay, mHour, mMin;;
     private TextView mDateTextView, mHourTextView, mMinuteTextView;
     private Spinner mCategorySpinner;
     private ArrayList<String> mListCategory;
@@ -47,8 +46,8 @@ public class DiaryDetailsActivity extends AppCompatActivity implements View.OnCl
     private DiaryHelper mDiaryHelper;
     private DiaryModel mDiaryModel;
     private int mSelectedCategoryPosition;
-    private TimePickerDialog mTimePickerDialog;
     private Calendar mCalendar;
+    private Date mDate;
 
     //New graphique
     private Menu mMenu;
@@ -69,7 +68,7 @@ public class DiaryDetailsActivity extends AppCompatActivity implements View.OnCl
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        setContentView(R.layout.activity_todo_details);
+        setContentView(R.layout.activity_diary_details);
 
         mContext = getApplicationContext();
 
@@ -90,7 +89,7 @@ public class DiaryDetailsActivity extends AppCompatActivity implements View.OnCl
         mDateTextView = (TextView) findViewById(R.id.date_text_view);
         mHourTextView = (TextView) findViewById(R.id.hour_text_view);
         mMinuteTextView = (TextView) findViewById(R.id.minute_text_view);
-        TextView timePrefix = (TextView) findViewById(R.id.todo_time_unit);
+        TextView timePrefix = (TextView) findViewById(R.id.diary_time_unit);
 
 
         mTitleEditText.setTypeface(robotoRegularTypeface);
@@ -100,14 +99,15 @@ public class DiaryDetailsActivity extends AppCompatActivity implements View.OnCl
         mMinuteTextView.setTypeface(robotoRegularTypeface);
         timePrefix.setTypeface(robotoRegularTypeface);
 
+
         //Date & Time Picker
-        int hour, min;
+        mDate = new Date();
         mCalendar = Calendar.getInstance();
         mYear = mCalendar.get(Calendar.YEAR);
         mMonth = mCalendar.get(Calendar.MONTH);
         mDay = mCalendar.get(Calendar.DAY_OF_MONTH);
-        hour = mCalendar.get(Calendar.HOUR_OF_DAY);
-        min = mCalendar.get(Calendar.MINUTE);
+        mHour = mCalendar.get(Calendar.HOUR_OF_DAY);
+        mMin = mCalendar.get(Calendar.MINUTE);
 
         mCategorySpinner = (Spinner) findViewById(R.id.category_spinner);
 
@@ -131,7 +131,7 @@ public class DiaryDetailsActivity extends AppCompatActivity implements View.OnCl
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.todo_details_menu, menu);
+        getMenuInflater().inflate(R.menu.diary_details_menu, menu);
 
         mMenu = menu;
         return super.onCreateOptionsMenu(menu);
@@ -149,7 +149,6 @@ public class DiaryDetailsActivity extends AppCompatActivity implements View.OnCl
         mId = loadLastIdTaskToSharedPreference();
 
     //Check if it's new To_do
-        Log.i(TAG,"mIdTodo: " + mId);
         if (!("").equals(mId)) {
             loadData(mId);
         }
@@ -163,25 +162,25 @@ public class DiaryDetailsActivity extends AppCompatActivity implements View.OnCl
     }
 
     private void loadData(String id) {
-        mDiaryModel = mDiaryHelper.findTodo(id);
+        mDiaryModel = mDiaryHelper.findDiary(id);
 
         mId = id;
 
         if (mDiaryModel != null) {
-            if (mDiaryModel.getTitleTodo().equals("") ||
-                    mDiaryModel.getDescriptionTodo().equals("")) {
+            if (mDiaryModel.getTitleDiary().equals("") ||
+                    mDiaryModel.getDescriptionDiary().equals("")) {
                 mTitleEditText.setText(title_draft);
                 mDescriptionEditText.setText(desc_draft);
             } else {
-                mTitleEditText.setText(mDiaryModel.getTitleTodo());
-                mDescriptionEditText.setText(mDiaryModel.getDescriptionTodo());
+                mTitleEditText.setText(mDiaryModel.getTitleDiary());
+                mDescriptionEditText.setText(mDiaryModel.getDescriptionDiary());
             }
         }
 
         try {
-            mYear = mDiaryModel.getDateTodo().getYear() + 1900;
-            mMonth = mDiaryModel.getDateTodo().getMonth() + 1;
-            mDay = mDiaryModel.getDateTodo().getDate();
+            mYear = mDiaryModel.getDateDiary().getYear() + 1900;
+            mMonth = mDiaryModel.getDateDiary().getMonth() + 1;
+            mDay = mDiaryModel.getDateDiary().getDate();
             String month = Globals.getMonth(mMonth);
             mDateTextView.setText(mDay + " " + month + " " + mYear);
         } catch (Exception e) {
@@ -189,52 +188,38 @@ public class DiaryDetailsActivity extends AppCompatActivity implements View.OnCl
         }
 
         //Task time
-        int hourTask = mDiaryModel.getTimeTodo() / 60;
-        int minuteTask = mDiaryModel.getTimeTodo() % 60;
+        int hourTask = mDiaryModel.getTimeDiary() / 60;
+        int minuteTask = mDiaryModel.getTimeDiary() % 60;
         TimeModel timeTask = Globals.setTimeFormat(hourTask, minuteTask);
         mHourTextView.setText(timeTask.getHour());
         mMinuteTextView.setText(timeTask.getMinute());
 
         for (int i = 0; i < mListCategory.size(); i++) {
-            if (mDiaryModel.getCategoryTodo().equals(mListCategory.get(i))) {
+            if (mDiaryModel.getCategoryDiary().equals(mListCategory.get(i))) {
                 mSelectedCategoryPosition = i;
             }
         }
-        mCategorySpinner.setSelection(categ_draft);
+        mCategorySpinner.setSelection(mSelectedCategoryPosition);
     }
 
 
     private void saveData() {
         String title, description;
         title = mTitleEditText.getText().toString();
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(mDate);
+        int timeDiary = cal.get(Calendar.HOUR_OF_DAY) * 60 + cal.get(Calendar.MINUTE);
         description = mDescriptionEditText.getText().toString();
         try {
             if ("".equals(mId)) {
                 mId = UUID.randomUUID().toString();
                 saveLastIdTaskToSharedPreference(mId);
-                mDiaryHelper.addTodo(mId, title, mCategory, null, description);
+                mDiaryHelper.addDiary(mId, title, mCategory, mCalendar.getTime(), timeDiary, description);
             } else {
                 saveLastIdTaskToSharedPreference(mId);
-                Date toDoDate = mDiaryModel.getDateTodo();
-                mDiaryHelper.updateTodo(mId, title, mCategory, toDoDate, description);
+                Date diaryDate = mDiaryModel.getDateDiary();
+                mDiaryHelper.updateDiary(mId, title, mCategory, diaryDate, timeDiary, description);
 
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void saveFirstDate(Date date) {
-        String title, description;
-        title = mTitleEditText.getText().toString();
-        description = mDescriptionEditText.getText().toString();
-        try {
-            if ("".equals(mId)) {
-                mId = UUID.randomUUID().toString();
-                saveLastIdTaskToSharedPreference(mId);
-                mDiaryHelper.addTodo(mId, title, mCategory, date, description);
-            } else {
-                saveLastIdTaskToSharedPreference(mId);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -259,10 +244,10 @@ public class DiaryDetailsActivity extends AppCompatActivity implements View.OnCl
 
             case R.id.menu_delete:
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setMessage(getResources().getString(R.string.todo_details_remove_alert)).setPositiveButton(
+                builder.setMessage(getResources().getString(R.string.diary_details_remove_alert)).setPositiveButton(
                         "Supprimer", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        mDiaryHelper.removeTodo(mId);
+                        mDiaryHelper.removeDiary(mId);
                         finish();
                     }
                 }).setNegativeButton("Annuler", null);

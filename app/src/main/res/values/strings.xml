@@ -17,7 +17,7 @@
     <!--Exit-->
     <string name="activity_exit">Exit</string>
 
-    <string name="todo_details_remove_alert">Are you sure to delete this ?</string>
+    <string name="diary_details_remove_alert">Are you sure to delete this ?</string>
 
 
 </resources>
