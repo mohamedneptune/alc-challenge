@@ -23,13 +23,11 @@ public class SplashScreenActivity extends AppCompatActivity {
 
     private Intent intent;
     private static final int LOADER_ID = 1;
-    private Context mContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        mContext = getApplicationContext();
         Globals.setApplicationContext(getApplicationContext());
 
         //Show application in full screen

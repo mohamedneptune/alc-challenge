@@ -6,13 +6,25 @@
 
     <string name="action_settings">Settings</string>
 
+    <!-- Authentification-->
+    <string name="btn_disconnect">Click Here To Sign Out</string>
+    <string name="activity_authentication_title">Authentication</string>
+
     <!-- Home -->
     <string name="activity_diary_title">Diary</string>
 
-    <string name="detail_hour_unit">:</string>
+    <!-- DiaryList -->
 
+
+
+    <!-- Details -->
+    <string name="detail_hour_unit">:</string>
     <string name="activity_details_title">Details</string>
-    <string name="activity_authentication_title">Authentication</string>
+    <string name="diary_delete">delete</string>
+    <string name="diary_save">save</string>
+    <string name="diary_title">Title</string>
+    <string name="diary_description">Description</string>
+
 
     <!--Exit-->
     <string name="activity_exit">Exit</string>

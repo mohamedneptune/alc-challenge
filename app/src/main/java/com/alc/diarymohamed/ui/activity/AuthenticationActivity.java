@@ -167,7 +167,7 @@ public class AuthenticationActivity extends AppCompatActivity {
                             SharedPreferences mSharedPreferences = getSharedPreferences("MyPrefs",
                                     Context.MODE_PRIVATE);
                             SharedPreferences.Editor editor = mSharedPreferences.edit();
-                            editor.putString("user_name", firebaseUser.getDisplayName().toString());
+                            editor.putString("user_name", firebaseUser.getDisplayName());
                             editor.apply();
 
                             Intent intent = new Intent(AuthenticationActivity.this,

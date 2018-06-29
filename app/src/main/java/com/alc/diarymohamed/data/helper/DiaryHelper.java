@@ -55,8 +55,7 @@ public class DiaryHelper {
     public RealmResults<DiaryModel> findAllDiary() {
         mRealm = Realm.getDefaultInstance();
         RealmQuery<DiaryModel> query = mRealm.where(DiaryModel.class);
-        RealmResults<DiaryModel> diaryModels = query.findAll();
-        return diaryModels;
+        return query.findAll();
     }
 
     public DiaryModel findDiary(String idDiary) {

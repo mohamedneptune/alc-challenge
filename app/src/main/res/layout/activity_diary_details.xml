@@ -30,7 +30,7 @@
                     android:layout_height="40dp"
                     android:layout_marginStart="10dp"
                     android:background="@android:color/transparent"
-                    android:hint="Titre"
+                    android:hint="@string/diary_title"
                     android:inputType="text"
                     android:maxLength="30"/>
             </android.support.v7.widget.CardView>
@@ -48,7 +48,7 @@
                     android:layout_height="100dp"
                     android:layout_marginStart="15dp"
                     android:background="@android:color/transparent"
-                    android:hint="Description"
+                    android:hint="@string/diary_description"
                     android:inputType="textMultiLine"
                     android:maxLength="60"
                     android:maxLines="2"/>
@@ -69,7 +69,6 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="2dp"
                     android:layout_marginTop="2dp"
-                    android:onClick="setTaskDate"
                     android:textSize="12sp" />
 
                 <TextView

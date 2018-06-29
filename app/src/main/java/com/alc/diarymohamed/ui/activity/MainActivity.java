@@ -33,10 +33,6 @@ public class MainActivity extends AppCompatActivity
 
     private static final String TAG = MainActivity.class.getSimpleName();
 
-    private Context mContext;
-    private Toolbar mToolBar;
-    private DrawerLayout mDrawer;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,13 +40,13 @@ public class MainActivity extends AppCompatActivity
         requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         setContentView(R.layout.activity_main);
-        mToolBar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(mToolBar);
+        Toolbar toolBar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolBar);
         getSupportActionBar().setTitle(getResources().getString(R.string.activity_diary_title));
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, mToolBar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+                this, drawer, toolBar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
@@ -75,9 +71,9 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onBackPressed() {
-        mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (mDrawer.isDrawerOpen(GravityCompat.START)) {
-            mDrawer.closeDrawer(GravityCompat.START);
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
         } else {
             finish();
         }
@@ -124,8 +120,8 @@ public class MainActivity extends AppCompatActivity
                     break;
             }
 
-            mContext = getApplicationContext();
-            DiaryApplication.setGlobalAppContext(mContext);
+            Context context = getApplicationContext();
+            DiaryApplication.setGlobalAppContext(context);
             Fragment fragment = fragmentClass.newInstance();
             FragmentManager fragmentManager = getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();

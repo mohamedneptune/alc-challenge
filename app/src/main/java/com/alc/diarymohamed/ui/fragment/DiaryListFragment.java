@@ -32,8 +32,6 @@ public class DiaryListFragment extends Fragment implements View.OnClickListener 
     private static final String TAG = DiaryListFragment.class.getSimpleName();
     private RecyclerView mRecyclerView;
     private Context mContext;
-    private List<DiaryModel> mDiaryArray;
-    private DiaryHelper mDiaryHelper;
 
 
     public DiaryListFragment() {
@@ -102,11 +100,11 @@ public class DiaryListFragment extends Fragment implements View.OnClickListener 
     }
 
     private void showDiary() {
-        mDiaryHelper = new DiaryHelper(mContext);
-        mDiaryArray = mDiaryHelper.findAllDiary();
+        DiaryHelper diaryHelper = new DiaryHelper(mContext);
+        List<DiaryModel> diaryArray = diaryHelper.findAllDiary();
 
-        if (mDiaryArray != null) {
-            RecyclerView.Adapter adapter = new DiaryRecyclerViewAdapter(mContext, mDiaryArray,
+        if (diaryArray != null) {
+            RecyclerView.Adapter adapter = new DiaryRecyclerViewAdapter(mContext, diaryArray,
                     R.layout.item_diary);
             mRecyclerView.setAdapter(adapter);
         }

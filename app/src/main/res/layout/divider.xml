@@ -2,6 +2,7 @@
 <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
            android:layout_width="match_parent"
            android:layout_height="1dp"
-           android:layout_marginLeft="76dp"
+           android:layout_marginStart="76dp"
            android:background="?android:attr/listDivider"
-           android:scaleType="fitXY"/>
+           android:scaleType="fitXY"
+           android:contentDescription="divider" />

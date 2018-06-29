@@ -8,7 +8,6 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -42,7 +41,9 @@ public class DiaryDetailsActivity extends AppCompatActivity implements View.OnCl
         AdapterView.OnItemSelectedListener {
 
     private static final String TAG = DiaryDetailsActivity.class.getSimpleName();
-    private int mYear, mMonth, mDay, mHour, mMin;;
+    private int mYear;
+    private int mMonth;
+    private int mDay;
     private TextView mDateTextView, mHourTextView, mMinuteTextView;
     private Spinner mCategorySpinner;
     private ArrayList<String> mListCategory;
@@ -55,11 +56,7 @@ public class DiaryDetailsActivity extends AppCompatActivity implements View.OnCl
     private Calendar mCalendar;
     private Date mDate;
 
-    //New graphique
-    private Menu mMenu;
     private Intent myIntent;
-    private MenuItem menuItemDelete, menuItemSave;
-    private Context mContext;
 
     String title_draft, desc_draft;
     int categ_draft;
@@ -76,17 +73,14 @@ public class DiaryDetailsActivity extends AppCompatActivity implements View.OnCl
 
         setContentView(R.layout.activity_diary_details);
 
-        mContext = getApplicationContext();
+        Context context = getApplicationContext();
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
 
-        Typeface robotoMediumTypeface, robotoRegularTypeface;
-        robotoMediumTypeface = Typeface.createFromAsset(getAssets(),
-                "fonts/" + "Roboto-Medium.ttf");
-        robotoRegularTypeface = Typeface.createFromAsset(getAssets(),
+        Typeface robotoRegularTypeface = Typeface.createFromAsset(getAssets(),
                 "fonts/" + "Roboto-Regular.ttf");
 
 
@@ -112,8 +106,6 @@ public class DiaryDetailsActivity extends AppCompatActivity implements View.OnCl
         mYear = mCalendar.get(Calendar.YEAR);
         mMonth = mCalendar.get(Calendar.MONTH);
         mDay = mCalendar.get(Calendar.DAY_OF_MONTH);
-        mHour = mCalendar.get(Calendar.HOUR_OF_DAY);
-        mMin = mCalendar.get(Calendar.MINUTE);
 
         mCategorySpinner = (Spinner) findViewById(R.id.category_spinner);
 
@@ -131,7 +123,7 @@ public class DiaryDetailsActivity extends AppCompatActivity implements View.OnCl
         setTitle(getResources().getString(R.string.activity_details_title));
 
 
-        mDiaryHelper = new DiaryHelper(mContext);
+        mDiaryHelper = new DiaryHelper(context);
     }
 
 
@@ -139,7 +131,6 @@ public class DiaryDetailsActivity extends AppCompatActivity implements View.OnCl
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.diary_details_menu, menu);
 
-        mMenu = menu;
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -321,15 +312,15 @@ public class DiaryDetailsActivity extends AppCompatActivity implements View.OnCl
         editor.putString("draft_title", mTitleEditText.getText().toString());
         editor.putString("draft_desc", mDescriptionEditText.getText().toString());
         editor.putInt("draft_categ", mCategorySpinner.getSelectedItemPosition());
-        editor.commit();
+        editor.apply();
 
     }
 
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
 
-        menuItemDelete = menu.getItem(0);
-        menuItemSave = menu.getItem(1);
+        MenuItem menuItemDelete = menu.getItem(0);
+        MenuItem menuItemSave = menu.getItem(1);
 
         if (null == mDiaryModel) {
             menuItemDelete.setVisible(false);

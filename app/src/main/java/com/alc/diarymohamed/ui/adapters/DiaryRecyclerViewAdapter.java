@@ -39,9 +39,8 @@ public class DiaryRecyclerViewAdapter extends RecyclerView.Adapter<DiaryRecycler
     private final List<DiaryModel> mDiaryArray;
     private final List<DiaryModel> mDiaryArrayPendingRemoval;
     private final int mItemList;
-    private static Typeface mRobotoMediumTypeface, mRobotoBoldTypeface, mRobotoLightTypeface;
-    private final DiaryHelper mDiaryHelper;
-    private Date currentDate;
+    private static Typeface mRobotoMediumTypeface;
+    private static Typeface mRobotoBoldTypeface;
     private static final int PENDING_REMOVAL_TIMEOUT = 3000; // 3sec
     HashMap<String, Runnable> pendingRunnables = new HashMap<>(); // map of items to pending runnables, so we can cancel a removal if need be
 
@@ -56,11 +55,6 @@ public class DiaryRecyclerViewAdapter extends RecyclerView.Adapter<DiaryRecycler
                 "fonts/" + "Roboto-Medium.ttf");
         mRobotoBoldTypeface = Typeface.createFromAsset(mContext.getAssets(),
                 "fonts/" + "Roboto-Bold.ttf");
-        mRobotoLightTypeface = Typeface.createFromAsset(mContext.getAssets(),
-                "fonts/" + "Roboto-Light.ttf");
-        currentDate = new Date(System.currentTimeMillis());
-
-        mDiaryHelper = new DiaryHelper(mContext);
 
         mDiaryArray.addAll(diaryArray);
     }

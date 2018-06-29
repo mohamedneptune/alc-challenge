@@ -4,13 +4,13 @@
     <item
         android:id="@+id/menu_delete"
         android:icon="@drawable/delete"
-        android:title="delete"
+        android:title="@string/diary_delete"
         app:showAsAction="always"/>
 
     <item
         android:id="@+id/menu_save"
         android:icon="@drawable/save"
-        android:title="save"
+        android:title="@string/diary_save"
         app:showAsAction="always"/>
 
 </menu>
