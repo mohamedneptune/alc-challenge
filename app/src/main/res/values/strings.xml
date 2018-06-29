@@ -12,6 +12,7 @@
     <string name="detail_hour_unit">:</string>
 
     <string name="activity_details_title">Details</string>
+    <string name="activity_authentication_title">Authentication</string>
 
     <!--Exit-->
     <string name="activity_exit">Exit</string>

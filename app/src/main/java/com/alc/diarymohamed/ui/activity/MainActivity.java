@@ -1,6 +1,7 @@
 package com.alc.diarymohamed.ui.activity;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -12,9 +13,12 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
+import android.widget.TextView;
 
 import com.alc.diarymohamed.DiaryApplication;
 import com.alc.diarymohamed.R;
@@ -52,6 +56,18 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        View header = LayoutInflater.from(this).inflate(R.layout.nav_header_main, null);
+        navigationView.addHeaderView(header);
+
+
+
+        SharedPreferences sp = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+
+        String user_name =  sp.getString("user_name", "");
+
+        TextView textView_userName = (TextView) header.findViewById(R.id.text_user_name);
+        textView_userName.setText(user_name);
+
 
         setFragment(0, DiaryListFragment.class);
 

@@ -1,7 +1,9 @@
 package com.alc.diarymohamed.ui.activity;
 
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -50,7 +52,7 @@ public class AuthenticationActivity extends AppCompatActivity {
     com.google.android.gms.common.SignInButton signInButton;
 
     // TextView to Show Login User Email and Name.
-    TextView LoginUserName, LoginUserEmail;
+    TextView  LoginUserEmail;
 
 
     @Override
@@ -63,8 +65,6 @@ public class AuthenticationActivity extends AppCompatActivity {
 
         SignOutButton= (Button) findViewById(R.id.sign_out);
 
-        LoginUserName = (TextView) findViewById(R.id.textViewName);
-
         LoginUserEmail = (TextView) findViewById(R.id.textViewEmail);
 
         signInButton = (com.google.android.gms.common.SignInButton)findViewById(R.id.sign_in_button);
@@ -74,7 +74,6 @@ public class AuthenticationActivity extends AppCompatActivity {
 
         // Hiding the TextView on activity start up time.
         LoginUserEmail.setVisibility(View.GONE);
-        LoginUserName.setVisibility(View.GONE);
 
         // Creating and Configuring Google Sign In object.
         GoogleSignInOptions googleSignInOptions = new GoogleSignInOptions
@@ -116,6 +115,8 @@ public class AuthenticationActivity extends AppCompatActivity {
             }
         });
 
+        setTitle(getResources().getString(R.string.activity_authentication_title));
+
     }
 
 
@@ -152,9 +153,6 @@ public class AuthenticationActivity extends AppCompatActivity {
         AuthCredential authCredential = GoogleAuthProvider.getCredential(googleSignInAccount
                 .getIdToken(), null);
 
-        Toast.makeText(AuthenticationActivity.this,""+ authCredential.getProvider(),
-                Toast.LENGTH_LONG).show();
-
         firebaseAuth.signInWithCredential(authCredential)
                 .addOnCompleteListener(AuthenticationActivity.this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -173,18 +171,19 @@ public class AuthenticationActivity extends AppCompatActivity {
 
                             // Showing the TextView.
                             LoginUserEmail.setVisibility(View.VISIBLE);
-                            LoginUserName.setVisibility(View.VISIBLE);
-
-                            // Setting up name into TextView.
-                            LoginUserName.setText("NAME =  "+ firebaseUser.getDisplayName().toString());
 
                             // Setting up Email into TextView.
-                            LoginUserEmail.setText("Email =  "+ firebaseUser.getEmail().toString());
+                            LoginUserEmail.setText(firebaseUser.getEmail().toString());
+
+                            SharedPreferences mSharedPreferences = getSharedPreferences("MyPrefs",
+                                    Context.MODE_PRIVATE);
+                            SharedPreferences.Editor editor = mSharedPreferences.edit();
+                            editor.putString("user_name", firebaseUser.getDisplayName().toString());
+                            editor.apply();
 
                             Intent intent = new Intent(AuthenticationActivity.this,
                                     MainActivity.class);
                             startActivity(intent);
-                            //finish();
 
                         }else {
                             Toast.makeText(AuthenticationActivity.this,
@@ -216,8 +215,7 @@ public class AuthenticationActivity extends AppCompatActivity {
         // After logout Hiding sign out button.
         SignOutButton.setVisibility(View.GONE);
 
-        // After logout setting up email and name to null.
-        LoginUserName.setText(null);
+        // After logout setting up email to null.
         LoginUserEmail.setText(null);
 
         // After logout setting up login button visibility to visible.
